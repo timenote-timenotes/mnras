@@ -48,9 +48,9 @@
 \usepackage{graphicx}	% Including figure files
 \usepackage{amsmath}	% Advanced maths commands
 % \usepackage{amssymb}	% Extra maths symbols
-\usepackage{caption}
-\usepackage{subcaption}
-\graphicspath{{figures/}} 
+
+\input{settings.tex} 	% some manual settings
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%% AUTHORS - PLACE YOUR OWN COMMANDS HERE %%%%%
@@ -65,7 +65,7 @@
 
 % Title of the paper, and the short title which is used in the headers.
 % Keep the title short and informative.
-\title[Short title, max. 45 characters]{MNRAS \LaTeXe\ template -- title goes here}
+\title[Short title, max. 45 characters]{Broadband CCD photometry of Long-period comets C/2019 L3 (ATLAS) and C/2020 P3 (ATLAS)}
 
 % The list of authors, and the short list which is used in the headers.
 % If you need two or more lines of authors, add an extra line using \newauthor
@@ -85,13 +85,15 @@ $^{3}$Another Department, Different Institution, Street Address, City Postal Cod
 \date{Accepted XXX. Received YYY; in original form ZZZ}
 
 % Enter the current year, for the copyright statements etc.
-\pubyear{2015}
+\pubyear{\DTMfetchyear{now}}
 
 % Don't change these lines
 \begin{document}
 \label{firstpage}
 \pagerange{\pageref{firstpage}--\pageref{lastpage}}
 \maketitle
+
+\DTMsavenow{now}
 
 % Abstract of the paper
 \begin{abstract}
