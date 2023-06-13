@@ -1,0 +1,147 @@
+\section{Observations and data reduction} \label{sec:obs_data}
+
+\subsection{Observations}
+
+\begin{comment}
+C/2019 L3与C/2020 P3
+
+观测波段：BVR
+
+望远镜：094，095，119
+\end{comment}
+
+The observations on two comets metioned above were conducted \st{with} \ul{using} three different telescopes belonging to \ul{the International Scientific Optical Network (ISON)} between March and May 2021, namely the {\SI{1.0}{\m}} {\href{https://link.springer.com/content/pdf/10.1134/S1990341320040112.pdf}{Zeiss-1000}} telescope at Simeiz Observatory (Simeiz), the {\SI{2.6}{\m}} Shajn Telescope ({\href{https://crao.ru/index.php/en/telescopes-en/ztsh-en}{ZTSh}}) at Crimean Astrophysical Observatory (CrAO), and the {\SI{0.7}{\m}} Maksutov meniscus telescope at Abastumani Astrophysical Observatory ({\href{https://www.oato.inaf.it/blazars/webt/abastumani-astrophysical-observatory-georgia-fsu/}{AbAO}}). \st{Other detailed} \ul{The} technical parameters of these telescopes are listed in \autoref{tab:telescope}. Four kinds of broadband observational data were obtained with broadband B, V, R and I filters in the Johnson-Cousins system. The log of all observations is presented in \autoref{tab:c2019andc2020}\st{, including the observation date, the heliocentric distance ($r$), the geocentric distance ($\Delta$), the phase angle, the filter and corresponding numbers of images, the image size and scale as well as telescope}. Most of the data was obtained from telescope Maksutov. For comet C/2019 L3, the observations were before the time of perihelion, while for comet C/2020 P3, it reached its perihelion during the observation period. Besides, some of the data shown in \autoref{tab:c2019andc2020} is not used in subsequent analysis due to its faintness. 
+
+\begin{comment}
+两颗彗星的观测数据来源于4种不同的望远镜，其中一种未在头文件中标识，大部分观测数据来源于`AC-32, 700/1000 Maksutov, AbAO'，此望远镜所在的天文台MPC编号为119。观测时间均在2021年3月至5月之间，主要观测波段为BVR。有关望远镜的信息如表~\ref{tab:telescope}~所示，表~\ref{tab:c2019andc2020}~描述了彗星C/2019 L3和C/2020 P3的观测数据信息
+
+观测模式是否为恒动？
+
+所得观测图像都已经过暗流校正和平场校正，%(with MaxIm DL)
+\end{comment}
+
+
+\begin{comment}
+is differential tracking?\marginpar{是否为恒动？}
+
+telescopes: 
+\begin{enumerate}
+    \item the 1.0 m Zeiss--1000 telescope at Simeiz Observatory (Simeiz)
+    \par Sensor: EEV 42--40
+    \par Frame size: $2048\times2048$ pixels, $7.3^\prime\times7.3^\prime$
+    \par Scale (no binning): $0.216^{\prime \prime}$/pixel
+    \par Pixel size: $13.5 \times 13.5 \mu$m
+    \item the 2.6 m Shajn Telescope (ZTSh) at Crimean Astrophysical Observatory (CrAO) 
+    \par Sensor: e2v CCD 42--40
+    \par Focusing device: FLI Atlas
+    \par Frame size: $2048\times2048$ pixels, $14.2^\prime\times14.2^\prime$
+    \par Pixel size: 13.5 microns, $0.4^{\prime \prime}$/pixel
+    \item the 0.7 m Maksutov meniscus telescope at Abastumani Astrophysical Observatory (AbAO)
+    \par The telescope is equipped with a FLI PL4240 Peltier-cooled CCD camera (2048×2048 pixels with size $13.5 \times 13.5 \mu$m).
+\end{enumerate}
+\end{comment}
+
+% 使用的望远镜信息
+\begin{table}[!htbp]
+    \centering
+    \caption{Information of instrunments used. }\label{tab:telescope}
+    \begin{threeparttable}
+        \resizebox{\linewidth}{!}{
+        \begin{tabular}{ccccccc}
+            \toprule
+            Telescope & CCD Camera & Focal length [\si{\mm}] & Frame size & Pixel size & Site & MPC Code\tnote{1} \\
+            \midrule
+            ZEISS-1000 & FLI & \num{13000} & \makecell[c]{ \SI{2048 x 2048}{px} \\ $ \ang{;7.3;} \times \ang{;7.3;} $ } & \makecell[c]{\SI{13.5}{\um} \\ \SI{0.216}{^{\prime \prime}/px}}  & Crimea-Simeïs & 094 \\
+            ZTSh & FLI PL-4240 & \num{10000} & \makecell[c]{ \SI{2048 x 2048}{px} \\ $ \ang{;14.2;} \times \ang{;14.2;} $ } & \makecell[c]{ \SI{13.5}{\um} \\ \SI{0.4}{^{\prime \prime}/px}} & Crimea-Nauchnij & 095 \\
+            Maksutov & CCD FLI PL4240 & \num{2141} & \SI{2048 x 2048}{px} & \SI{13.5}{\um} & Abastuman       & 119 \\
+            %(not mentioned) & FLI & 13000 & 1016 & Crimea-Simeïs & 094 \\
+            \bottomrule
+        \end{tabular}
+        }
+        \begin{tablenotes}
+            \item[1] see \href{www.minorplanetcenter.net/iau/lists/ObsCodesF.html}{Minor Planet Center Observatory Code}
+        \end{tablenotes}
+    \end{threeparttable}
+\end{table}
+
+\DTMsetdatestyle{iso}
+% 两颗彗星观测数据的总览
+\begin{table}[!htbp]
+    \centering
+    \caption{Log of observations on C/2019 L3 and C/2020 P3}\label{tab:c2019andc2020}
+    \begin{threeparttable}
+        \resizebox{\linewidth}{!}{
+        \begin{tabular}{cccccccc}
+            \toprule
+            Observation Date & r\tnote{1}~[\si{\astronomicalunit}] & $\Delta$\tnote{2}~[\si{\astronomicalunit}] & Ph.A\tnote{3} & Filters\tnote{4} & Size\tnote{5}~[\si{px}] & Scale\tnote{6}~[\si{\km/px}] & Telescope \\
+            \midrule
+            \multicolumn{8}{l}{\textbf{C/2019 L3}} \\
+            \DTMdate{2021-03-28} & 4.385 & 4.916 & 10.4 & B$\times$10, V$\times$10, R$\times$10 & 1018 $\times$ 1018 & 2075 & ZEISS-1000 \\
+            \DTMdate{2021-04-02} & 4.360 & 4.933 & 10.1 & B$\times$4, V$\times$4, R$\times$5 & 2048 $\times$ 2048 & 4654 & Maksutov \\
+            \DTMdate{2021-04-03} & 4.355 & 4.936 & 10.1 & B$\times$5, V$\times$5, R$\times$6 & 2048 $\times$ 2048 & 4658 & Maksutov \\
+            2021-04-04 & 4.350 & 4.939 & 10.0 & B$\times$10, V$\times$10, R$\times$10 & 2048 $\times$ 2048 & 4660 & Maksutov \\
+            2021-04-08 & 4.331 & 4.950 & 9.7 & B$\times$6, V$\times$5, R$\times$5 & 2048 $\times$ 2048 & 4670 & Maksutov \\
+            2021-04-12 & 4.311 & 4.960 & 9.5 & B$\times$4, V$\times$5, R$\times$3 & 2048 $\times$ 2048 & 4684 & Maksutov \\
+            2021-04-14 & 4.301 & 4.965 & 9.3 & B$\times$4, V$\times$5, R$\times$5 & 2048 $\times$ 2048 & 4686 & Maksutov \\
+            2021-04-15 & 4.296 & 4.967 & 9.3 & B$\times$4, V$\times$4, R$\times$4 & 2048 $\times$ 2048 & 4687 & Maksutov \\
+            2021-05-04 & 4.205 & 4.987 & 8.0 & B$\times$10, V$\times$10, R$\times$10, I$\times$10 & 1365 $\times$ 1365 & 1587 & ZEISS-1000 \\
+            2021-05-10 & 4.177 & 4.985 & 7.6 & B$\times$3, V$\times$3, R$\times$3, I$\times$3 & 2048 $\times$ 2048 & 4709 & Maksutov \\
+            2021-05-12 & 4.168 & 4.984 & 7.5 & B$\times$5, V$\times$5, R$\times$5, I$\times$5 & 2048 $\times$ 2048 & 4706 & Maksutov \\
+            2021-05-14 & 4.159 & 4.982 & 7.4 & \makecell[c]{B$\times$11, V$\times$11, R$\times$12, I$\times$11 \\ B$\times$7, V$\times$7, R$\times$7, I$\times$7} & \makecell[c]{1024 $\times$ 1024 \\ 2048 $\times$ 2048}  & \makecell[c]{2015 \\ 4706} & \makecell[c]{ZTSh \\ Maksutov} \\
+
+            \multicolumn{8}{l}{\textbf{C/2020 P3}} \\
+            2021-03-28 & 6.956 & 6.814 & 8.2 & B$\times$7, V$\times$7, R$\times$7 & 1018 $\times$ 1018 & 2937 & ZEISS-1000 \\
+            2021-04-02 & 6.990 & 6.813 & 8.2 & V$\times$11, R$\times$14 & 2048 $\times$ 2048 & 6592 & Maksutov \\
+            2021-05-11 & 7.216 & 6.814 & 7.6 & C$\times$4, V$\times$5, R$\times$5 & 2048 $\times$ 2048 & 6807 & Maksutov \\
+            2021-05-12 & 7.221 & 6.814 & 7.6 & \makecell[c]{B$\times$3, V$\times$3, R$\times$3, I$\times$3 \\ B$\times$6, V$\times$5, R$\times$5, I$\times$5} & \makecell[c]{1024 $\times$ 1024 \\ 2048 $\times$ 2048}  & \makecell[c]{2914 \\ 6807} & \makecell[c]{ZTSh \\ Maksutov} \\
+            \bottomrule
+        \end{tabular}
+        }
+        \begin{tablenotes}
+            \item[1] heliocentric distance
+            \item[2] geocentric distance
+            \item[3] phase angle
+            \item[4] numbers after `$\times$' indicate amounts of images under corresponding filters, `C' means `clear glass'
+            \item[5] size of original image
+            \item[6] the calculated image scale in \si{\km/pixel}
+        \end{tablenotes}
+    \end{threeparttable}
+\end{table}
+\DTMsetregional[text]
+
+\subsection{Data reduction}
+
+All of the images had been corrected with common methods for dark subtraction, bias subtraction and flat-field normalization when ISON provided the observational data for this research. In order to raise the signal/noise ratio, images on different observational dates were aligned and sum combined for different filters according to the photocenter of comet. The same thing was also done on the basis of photocenter of background star as the motion of comet in each frame is obvious. Several tasks in {\href{https://github.com/iraf-community/iraf}{IRAF}}, i.e., the \textbf{I}mage \textbf{R}eduction and \textbf{A}nalysis \textbf{F}acility, were applied for this procedure, including \texttt{center}, \verb|imshift| and \verb|combine|. Since the comet and reference stars for photometry are in the same frame, the airmass correction is not necessary. Given that some images are in the case where comet gets too close to the background stars around, psf subtraction was conducted to cover up these stars with tasks such as \verb|substar|. 
+
+\ul{
+With several photometric tasks in IRAF, the instrunment magnitudes of two comets were calculated, as well as comparison stars in each frame. Then the apparent magnitudes were obtained by differential photometry. The photometric calibration of these two comets' data was performed with the UCAC4 \citep{zacharias_fourth_2013} and UCAC5 \citep{zacharias_ucac5_2017} catalogues in }
+{\href{http://aladin.u-strasbg.fr}{\ul{Aladin}}}
+\ul{ where positions, B, V, and R magnitudes for comparison stars can be queryed easily. Additionally, the GCVS 5.1 \citep{samus_general_2017} catalogue was applied to inspect the variability of all the comparison stars. 
+
+In order to measure the  instrunment magnitudes of comets and comparison stars, circular aperture photometry was applied. The photometric aperture of comparison stars was determined by nearly \si{\num{2}} times the full-wide at half-maximum (FWHM). Since three different telescopes were involved during the observation, the photometry of comets was performed on different apertures centered on the comet photocenter, with all of them ensured to be up to \si{\num{1.5}} times the full-wide at half-maximum and close to each other in arcsecond as much as possible. The photometric results are listed as \autoref{tab:bvr}, and the error of photometry is derived from \autoref{eq:err} as follows: }
+\begin{equation}
+    Error = \sqrt{e_{c}^{2} + \sigma^2}, 
+    \label{eq:err}
+\end{equation}
+\ul{where $e_c$ is the magnitude error of comet from IRAF photometric file and $\sigma$ is the standard deviation of the calibration values in differential photometry. }
+
+
+\begin{comment}
+孔径测光(UCAC4, UCAC5)
+
+PSF减星
+
+图像合并
+
+由于同一天的观测数据较多，本文将同一天同一波段的图像合并后再进行测光，测光时使用到\verb|iraf|中的\verb|apphot|等天文软件包。研究过程中发现，部分图像中彗星与某些恒星位置过近，因此在合并之前将对应位置的恒星通过\verb|daophot|包中的\verb|psf, substar|等命令（task）进行PSF减星的操作，掩盖彗星附近的背景恒星。
+
+经过初始的合并后，得到的合并图像信息如下表所示
+
+考虑到在一定时间跨度内彗星相对于背景恒星会有显著的运动，对每组图像的合并分为两部分，一部分是参考彗星对齐进行合并，另一部分参考背景恒星对齐进行合并。
+
+参考星的BVR三个波段的标准星等从星表UCAC4和UCAC5中获取，并使用GCVS 5.1星表排除了参考星中可能存在的变星。aligned on the comet photocenter
+\end{comment}
+
+
+
+

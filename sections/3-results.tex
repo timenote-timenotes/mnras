@@ -1,0 +1,547 @@
+\section{Results} \label{sec:res}
+
+\subsection{Morphology}
+\begin{comment}
+
+对彗核的许多物理参数的表征（如旋转状态、喷流活动的位置）和彗核中发生的物理过程的量化是基于对彗星核各向异性发射特征的空间和时间观测实现的。然而，在许多情况下，这些彗发特征只是比背景值高几个百分点，需要通过增强技术来识别与测量。
+
+目前，主要使用的增强技术可分为以下几类：
+\begin{enumerate}
+	\item 通过简单的对比拉伸的方式展现出彗发的形态特征
+	\item 通过去除背景的方式展示彗发特征
+	\item 通过空间滤波的方式增强空间不连续性
+	\item 通过空间导数的方式增强空间不连续性
+\end{enumerate}
+
+\begin{shaded}
+
+原始图像合并，包含多个波段。
+
+一些图像PSF减星不够完美，因此会留下黑色痕迹。
+
+C/2020 P3 非常微弱，在此用白色圆圈出来(circled in white color)。但能辨识(identify)出延展的彗发
+
+north at the top, east to the left
+\end{shaded}
+\end{comment}
+
+\ul{The original images of C/2019 L3 in the R band exhibit greater clarity compared to images in other bands, and they all resemble a star-like appearance. On the other hand, the original images of C/2020 P3 appear very faint, and the ones taken in the R band are also relatively clearer than those in other bands. Unlike C/2019 L3, some images of C/2020 P3 reveal the presence of an extended tail.} After applying the data reduction process mentioned before, we get one image for each filter on each observational date. \autoref{fig:combinedimg} is a thumbnail view of the reduction result with comet located in center of each small parts whose field of view are all $\ang{;2;} \times \ang{;2;}$. On \DTMdate{2021-5-14}, images of comet C/2019 L3 were taken by two telescope, thus in \autoref{fig:combinedimg} there are two groups of thunbnails on this date with the upper one by telescope ZTSh and the lower one by telescope Maksutov, so were images of comet C/2020 P3 on \DTMdate{2021-5-12}. The black spots in several part of this view are due to the psf subtraction process, as it is not always perfect for star subtraction. For comet C/2019 L3, the observational record is abundant. The I band filter was added in the observation from May, 2021, providing more data for this study. From the combined images of C/2019 L3, it is easily to notice that this comet is very round and seemingly isotropic. For comet C/2020 P3, there are few data and in some cases it is hard to identify in single image. However, its extended coma looking like a tail is more obvious, especially for the images taken on \DTMdate{2021-5-12}, which roughly measured \ang{;;20} from comet center in R-band image. 
+
+For morphology analysis, it is necessasy to apply some image enhancement techniques with which we can recognize some features and structures hidden in background \citep{samarasinha_image_2014}. Many pieces of software have been developed for comet image enhancement, such as {\href{https://www.msb-astroart.com/down_en.htm}{Astroart 8}} and online tool {\href{https://www.psi.edu/research/cometimen}{Cometary Coma Image Enhancement Facility}}. In this work, 
+we applied azimuthal renormalization method on images of C/2019 L3 on \DTMdisplaydate{2021}{5}{14}{-1} by telescope Maksutov since other images are too faint and show no evident features after enhanced. The result is shown in \autoref{fig:aziren}, where the enhanced images under V and R filters show a small northeastward fan-shape structure, while the enhanced images under B and I filters give no obvious feature.  
+
+\begin{figure}[!htbp]
+    \centering
+    \subcaptionbox{C/2019 L3: BVR}[\linewidth]{
+        \includegraphics[width=.48\linewidth]{combine1.pdf}
+        \includegraphics[width=.48\linewidth]{combine3.pdf} 
+        \includegraphics[width=.48\linewidth]{combine2.pdf}
+        \includegraphics[width=.48\linewidth]{combine4.pdf}
+    }
+    \caption{The processed images of comet C/2019 L3 and C/2020 P3 in different filters, with north at the top and east to the left. The field of view is $ 2^{\prime} \times 2^{\prime} $ for each thumbnail. Blue arrow shows the direction of the comets' velocity, and the orange arrow shows the direction to the Sun. }
+    \label{fig:combinedimg}
+\end{figure}
+
+\begin{figure}[!htbp]
+    \centering
+    \ContinuedFloat
+    \subcaptionbox{C/2019 L3: BVRI}[\linewidth]{
+        \includegraphics[width=.7\linewidth]{combine5.pdf}
+        \includegraphics[width=.7\linewidth]{combine6.pdf} 
+        \includegraphics[width=.7\linewidth]{combine7.pdf} 
+    }
+        
+    \caption{(Continued)}
+\end{figure}
+
+\begin{figure}[!htbp]
+    \centering
+    \ContinuedFloat
+    \subcaptionbox{C/2020 P3}[\linewidth]{
+        \includegraphics[width=.875\linewidth]{combine8.pdf}
+        \includegraphics[width=.7\linewidth]{combine9.pdf} 
+    }
+    
+    \caption{(Continued)}
+\end{figure}
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=.7\linewidth]{azi_ren.pdf}
+    \caption{Azimuthal renormalized image of C/2019 L3 on May 14, 2021. \label{fig:aziren}}
+\end{figure}
+    
+\subsection{\color{red}Aperture photometry (moved upside)}
+
+%对彗星进行测光时，对于C/2019 L3选取孔径$\rho = 4 \times 10^4 km$，对于C/2020 P3选取孔径$\rho = 6 \times 10^4 km$，两孔径均大于对应彗星的1.5倍FWHM，计算得出的BVR星等如表~\ref{tab:c2019bvr}~和表~\ref{tab:c2020bvr}~所示：
+
+%测光误差使用公式~\ref{eq:err}~计算：
+%\begin{equation}
+%    Error = \sqrt{e_{c}^{2} + \left( \frac{1}{N} \sum_{i=1}^{N}\sigma_i \right)^2}, 
+%    \label{eq:err}
+%\end{equation}
+
+\st{
+With several photometric tasks in IRAF, the instrunment magnitudes of two comets were calculated, as well as comparison stars in each frame. Then the apparent magnitudes were obtained by differential photometry. The photometric calibration of these two comets' data was performed with the UCAC4 \citep{zacharias_fourth_2013} and UCAC5 \citep{zacharias_ucac5_2017} catalogues in}
+ {\href{http://aladin.u-strasbg.fr}{\st{Aladin}}} 
+ \st{where positions, B, V, and R magnitudes for comparison stars can be queryed easily. Additionally, the GCVS 5.1 \citep{samus_general_2017} catalogue was applied to inspect the variability of all the comparison stars. 
+
+In order to measure the  instrunment magnitudes of comets and comparison stars, circular aperture photometry was applied. The photometric aperture of comparison stars was determined by nearly \si{\num{2}} times the full-wide at half-maximum (FWHM). Since three different telescopes were involved during the observation, the photometry of comets was performed on different apertures centered on the comet photocenter, with all of them ensured to be up to \si{\num{1.5}} times the full-wide at half-maximum and close to each other in arcsecond as much as possible. The photometric results are listed as \autoref{tab:bvr}, and the error of photometry is derived from \autoref{eq:err} as follows:}
+\begin{equation}
+    Error = \sqrt{e_{c}^{2} + \sigma^2}, 
+    \label{eq:err}
+\end{equation}
+\st{where $e_c$ is the magnitude error of comet from IRAF photometric file and $\sigma$ is the standard deviation of the calibration values in differential photometry. }
+
+% 确保孔径大于1.5FWHM，对于色指数，可取横坐标B-V，纵坐标V-R，结合JFC、LPC等以及太阳的色指数进行比较
+% BVR
+\begin{table}[!htbp]
+    \centering
+    \caption{Photometric results of comet C/2019 L3 and C/2020 P3. }\label{tab:bvr}
+    \begin{threeparttable}
+        \resizebox{\linewidth}{!}{
+        \begin{tabular}{ccccccccc}
+            \toprule
+            Observation Time\tnote{1} & $\rho\tnote{2}~[^{\prime \prime}]$ & B & V & R & I & $\mathrm{B}-\mathrm{V}$ & $\mathrm{V}-\mathrm{R}$ & $\mathrm{R}-\mathrm{I}$\\
+            \midrule
+            \multicolumn{9}{l}{\textbf{C/2019 L3}} \\
+            2021-03-28.729 & 14.5 & 14.32 $\pm$ 0.09 & 13.72 $\pm$ 0.07 & 13.17 $\pm$ 0.15 & - & 0.60 $\pm$ 0.11 & 0.55 $\pm$ 0.16 & - \\
+            2021-04-02.739 & 15.6 & 14.37 $\pm$ 0.10 & 13.62 $\pm$ 0.04 & 13.14 $\pm$ 0.06 & - & 0.75 $\pm$ 0.11 & 0.48 $\pm$ 0.07 & - \\
+            2021-04-03.719 & 15.6 & 14.25 $\pm$ 0.05 & 13.55 $\pm$ 0.03 & 13.08 $\pm$ 0.07 & - & 0.70 $\pm$ 0.05 & 0.47 $\pm$ 0.08 & - \\
+            2021-04-04.691 & 15.6 & 14.26 $\pm$ 0.05 & 13.55 $\pm$ 0.02 & 13.32 $\pm$ 0.01 & - & 0.70 $\pm$ 0.05 & 0.23 $\pm$ 0.02 & - \\
+            2021-04-08.691 & 15.6 & 14.33 $\pm$ 0.05 & 13.44 $\pm$ 0.02 & 13.36 $\pm$ 0.01 & - & 0.88 $\pm$ 0.05 & 0.09 $\pm$ 0.03 & - \\
+            2021-04-12.724 & 19.5 & 14.22 $\pm$ 0.05 & 13.33 $\pm$ 0.01 & 13.19 $\pm$ 0.01 & - & 0.89 $\pm$ 0.05 & 0.14 $\pm$ 0.02 & - \\
+            2021-04-14.702 & 15.6 & 14.21 $\pm$ 0.04 & 13.51 $\pm$ 0.03 & 13.29 $\pm$ 0.02 & - & 0.71 $\pm$ 0.05 & 0.21 $\pm$ 0.03 & - \\
+            2021-04-15.714 & 15.6 & 14.23 $\pm$ 0.03 & 13.51 $\pm$ 0.01 & 13.28 $\pm$ 0.02 & - & 0.72 $\pm$ 0.04 & 0.23 $\pm$ 0.02 & - \\
+            2021-05-04.736 & 11.0 & 14.32 $\pm$ 0.04 & 13.75 $\pm$ 0.04 & 13.42 $\pm$ 0.04 & 13.25 $\pm$ 0.03 & 0.57 $\pm$ 0.05 & 0.33 $\pm$ 0.06 & 0.17 $\pm$ 0.05 \\
+            2021-05-10.735 & 15.6 & 13.96 $\pm$ 0.03 & 13.24 $\pm$ 0.01 & 13.05 $\pm$ 0.03 & 12.80 $\pm$ 0.04 & 0.72 $\pm$ 0.04 & 0.18 $\pm$ 0.03 & 0.26 $\pm$ 0.05 \\
+            2021-05-12.724 & 15.6 & 14.14 $\pm$ 0.03 & 13.27 $\pm$ 0.03 & 13.11 $\pm$ 0.02 & 12.90 $\pm$ 0.03 & 0.87 $\pm$ 0.05 & 0.16 $\pm$ 0.04 & 0.22 $\pm$ 0.04 \\
+            2021-05-14.721 & 14.0 & 14.21 $\pm$ 0.04 & 13.28 $\pm$ 0.04 & 13.13 $\pm$ 0.02 & 12.90 $\pm$ 0.06 & 0.93 $\pm$ 0.06 & 0.15 $\pm$ 0.04 & 0.24 $\pm$ 0.06 \\
+            \multicolumn{9}{l}{\textbf{C/2020 P3}} \\
+            2021-04-02.775 & 13.0 & - & 17.61 $\pm$ 0.05 & 17.24 $\pm$ 0.03 & - & - & 0.37 $\pm$ 0.05 & - \\
+            2021-05-11.744 & 13.0 & - & 18.15 $\pm$ 0.05 & 17.83 $\pm$ 0.04 & - & - & 0.32 $\pm$ 0.06 & - \\
+            2021-05-12.749 & 6.7 & 19.00 $\pm$ 0.06 & 18.05 $\pm$ 0.03 & 17.88 $\pm$ 0.02 & 17.67 $\pm$ 0.04 & 0.95 $\pm$ 0.07 & 0.17 $\pm$ 0.04 & 0.21 $\pm$ 0.05 \\
+            \bottomrule
+        \end{tabular}
+        }
+        \begin{tablenotes}
+            \item[1] UT time at the beginning of exposure
+            \item[2] the photometric aperture in arcsecond
+        \end{tablenotes}
+    \end{threeparttable}
+\end{table}
+
+\begin{comment}
+\subsection{Nucleus size}
+
+For comets observed at large heliocentric distances that are commonly assumed to be inactive, their photometric R magnitude, denoted as $m_R$, can be utilized to derive the maximum estimate for the geometric cross-sectional area of the cometary nucleus. This estimation involves the use of the formula proposed by \cite{lamy_comet_2004} for asteroids observed at high phase angle that can be applied to a spherical body expressed as
+\begin{equation}
+    A_R a_N^2 < \num{2.24e22} r^2 \Delta^2 10^{0.4\left(m_{\odot} - m_R + \beta \alpha\right)}, 
+\end{equation}
+where $A_R = 0.04$ is the geometric albedo \citep{lamy_comet_2004}, $a_N$ the radius, $r$ the heliocentric distance in \si{\astronomicalunit}, $\Delta$ the geocentric distance in \si{\astronomicalunit}, $m_{\odot} = -27.15$ the R magnitude of the Sun \citep{willmer_absolute_2018}, $\alpha$ the phase angle, and $\beta = 0.04$ the phase coefficient \citep{lamy_comet_2004}. 
+Given that two comets in this work were active during the observational run, we set the photometry aperture equal to stellar FWHM and calculate the background value using a circular region near the comet nucleus to reduce the influence of cometary outbursts, then use differential photometry to get new R magnitude to provide a coarse estimation for the nucleus size. 
+The images of comet C/2019 L3 taken on \DTMdate{2021-5-4} and that of C/2020 P3 taken on \DTMdate{2021-5-12} exhibit high resolution and were captured at sufficiently distant heliocentric distance, from which we were able to estimate the upper limits of radii for two comets as follows: C/2019 L3 with a limit of {\SI{75.1 +- 3.5}{\km}}, and C/2020 P3 with a limit of {\SI{26.8 +- 0.7}{\km}}. 
+
+% 在后面讨论一下减除彗发的方法是否可靠 (是否稳态彗发? 稳态时可靠)
+\end{comment}
+
+\subsection{Surface brightness profile}
+
+Based on the photometric results, the \st{one-dimension} radial surface brightness profile (SBP) was computed as the function of the angular distance $\rho$ measured from the photocenter of comet. \ul{For this purpose, every image was trimmed from the center of the comet, and the sky value was determined by the median of the trimmed image.} 
+\st{In case of a steady-state coma, will be proportional to $\rho^m$ with $-1.5 \leqslant m \leqslant -1.0$ ($B \propto \rho^m$), and the index $m$ (also called as gradient, since $m=\dif\lg{B} / \dif\lg{\rho}$) will decrease to \si{\num{-1.5}} in the limiting case as the radiation pressure accelerates the dust particles~\citep{jewitt_surface_1987}. Otherwise, 
+there would exist nonsteady dust coma emission should the index $m$ be under \si{\num{-1.5}}~\citep{lowry_ccd_1999}. 
+Before calculation, every image was trimmed from the center of the comet, and the skyvalue was determined by the median of the trimmed image.} 
+\ul{In the case of a steady-state coma, the surface brightness $B$ is expected to follow a power-law relation with $\rho$ as $B \propto \rho^m$, where $-1.5 \leqslant m \leqslant -1.0$, and the index $m$ is often referred to as the gradient ($m=\dif\lg{B} / \dif\lg{\rho}$). As the radiation pressure accelerates the dust particles, the value of $m$ decreases and approaches \si{\num{-1.5}} in the limiting case~\citep{jewitt_surface_1987}. Conversely, if the index $m$ falls below \si{\num{-1.5}}, it suggests the presence of nonsteady dust coma emission.}
+
+Not only in single images does comet C/2019 L3 appear like a stellar, but also in stacked images. However, the SBP of C/2019 L3 shows it clearly the excess flux in outer region compared with stellar SBP. In \autoref{fig:sbp} we report an example plot of the R-band SBP as a function of $\lg{\rho}$ for C/2019 L3 observed on \DTMdate{2021-5-4}. The gradient $m$ in the $0.5 \leqslant \lg{\rho} \leqslant 1.0$ range is calculated by \ul{the} least-squares fit to $\lg{B}$ versus $\lg{\rho}$\st{ for images on each date of C/2019 L3 and plotted on \autoref{fig:sbp_m}.} 
+\ul{In \autoref{fig:sbp_m}, the gradients of C/2019 L3 on each date are depicted, and the averaged value is indicated by a blue dotted line.} 
+Note that in \autoref{fig:sbp} the SBP is expressed as magnitude, and according to the relationship between magnitude and luminous intensity, the slope in such figure should be multiplied by \num{-0.4} to make the gradient $m$. The averaged $m$ is \si{\num{-1.68}}, and in most cases it is below \si{\num{-1.5}}, indicating that this comet's dust emission is in a nonsteady state. While for comet C/2020 P3, all images taken are so faint and it would bring about a great deal of uncertainty if we calculated its SBP. 
+
+% 考虑放置最大、最小、中位数对应图像
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=.6\linewidth]{sbp-210504.pdf}
+    \caption{An example figure for R-band surface brightness of comet C/2019 L3. The error plot is the SBP of comet, and the blue solid line is the SBP of a background star. The blue dotted line is a linear regression result of comet's SBP vs $\lg{\rho}$ with $\lg{\rho}$ between 0.5 and 1.0, and the gradient $m$ related to the slope is marked on the graph with an arrow. }
+    \label{fig:sbp}
+\end{figure}
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=.6\linewidth]{sbp_m.pdf}
+    \caption{The $m$ of R-band surface brightness of comet C/2019 L3 with date, blue dotted line is the averaged m. }
+    \label{fig:sbp_m}
+\end{figure}
+
+
+\subsection{$Af\rho$}
+
+%Afrho主要列举R波段的结果
+%与其他长周期彗星的对比研究
+
+%$Af\rho$值的概念是由A'Hearn等在1984年提出的，该参数可用于衡量彗星活动，也能用于比较不同彗星的尘埃生成率。其中，$A$为粒子的平均几何反照率，$f$为孔径视场中的填充因子，$\rho$为彗星的孔径。尽管$Af\rho$会涉及可变的观测参数与物理参数，但一般情况下依然认为较大的$Af\rho$值表明着较高的尘埃活动。$Af\rho$的计算方法如公式~\ref{eq:afr}~所示：
+
+The $Af\rho$ value introduced by \citet{ahearn_comet_1984}, where $A$ represents the gain albedo, $f$ the filling factor, and $\rho$ the aperture, is commonly used to indicate the dust production activity of comets. Usually it is expressed in \si{\cm} as \autoref{eq:afr}: 
+\begin{equation}
+    Af\rho = \frac{4 r^2 \Delta^2}{\rho} 10^{0.4(M_\odot - M_c)}, 
+    \label{eq:afr}
+\end{equation}
+where $r$ is the heliocentric distance in \si{\astronomicalunit}, $\Delta$ the geocentric distance in \si{\km}, $\rho$ the aperture in \si{\km}, $M_\odot$ the absolute magnitude of the Sun (\si{\num{-26.13}} and \si{\num{-27.15}} for B and R filter, see \citealt{willmer_absolute_2018}), and $M_c$ the corresponding magnitude of comet under the aperture of $\rho$. 
+
+Due to the phase darkening effect, it is necessary to adjust $Af\rho$ values at different phase angles to a specific angle. In this work, all observations were conducted at small phase angles, and we normalize the $Af\rho$ values to a phase angle of \ang{0} using \autoref{eq:a0frho}, as shown below:
+\begin{equation}
+    A(0)f\rho = \frac{A(\alpha)f\rho}{\phi(\alpha)}, \label{eq:a0frho}
+\end{equation}
+where $\alpha$ is the phase angle\ul{, and $\phi$ is the phase function}. A composite phase function (see \citealt{schleicher_composition_2011, marcus_forward-scattering_2007}) suggested by {\href{https://asteroid.lowell.edu/comet/dustphase.html}{D. Schleicher}} is suitable for adjustion in this work. The related {\href{https://asteroid.lowell.edu/comet/dustphaseHM_table.html}{dustphaseHM\_table}} provides the phase function with phase angle in the $\ang{0} \leqslant \alpha \leqslant \ang{180}$ range, and we adopt cubic spline interpolation method on it to obtain unlisted values. 
+
+\autoref{fig:Afrho} shows some part of the R-band $Af\rho$ profiles, and results for the maximum of $Af\rho$ and the aperture corresponding to this maximum are summarised in \autoref{tab:afrho}. When a comet possesses steady coma, its $Af\rho$ will be independent of aperture. In this paper, as is shown in \autoref{fig:Afrho}, that is not the case for comet C/2019 L3 or C/2020 P3, both of which reveal a steep increse in $Af\rho$ with the aperture $\rho$ near the comet center along with a smooth decrese with larger aperture. The increase results from usually the effect of seeing and observational circumstance, while the nonsteady dust emmission and possibly the fading or destruction of dust grain bring the decrease \citep{lara_behaviour_2003,tozzi_imaging_2003}.  
+             
+% 可选择相同日心距范围内的其他长周期彗星进行比较
+
+%其中，$r$表示日心距（以AU为单位），$\Delta$表示地心距（以km为单位），$\rho$表示以km为单位的孔径，$M_\odot$和$M_c$分别表示太阳和彗星的星等。在比较不同彗星的活动性时，通常以$\rho = 10^4km$为基准比较它们$Af\rho$值的大小。
+
+\begin{figure}[!htbp]
+    \centering
+    \subcaptionbox{}{
+        \includegraphics[width=.48\linewidth]{R-Afrho-C2019L3-210415.pdf}
+    }
+    \subcaptionbox{}{
+        \includegraphics[width=.48\linewidth]{R-Afrho-C2019L3-210514.pdf}
+    }
+
+    \subcaptionbox{}{
+        \includegraphics[width=.48\linewidth]{R-Afrho-C2020P3-210402.pdf}
+    }
+    \subcaptionbox{}{
+        \includegraphics[width=.48\linewidth]{R-Afrho-C2020P3-210512.pdf}
+    }
+    \caption{R-band $Af\rho$ of comet C/2019 L3 and C/2020 P3. }
+    \label{fig:Afrho}
+\end{figure}
+
+% 统一至20000km？
+% Afrho
+\begin{table}[!htbp]
+    \centering
+    \caption{$Af\rho$ values for comet C/2019 L3 and C/2020 P3. }\label{tab:afrho}
+    \begin{threeparttable}
+        \begin{tabular}{cccc}
+            \toprule
+            Observation Time & $Af\rho$ ($\rho =$ \SI{e4}{\km}) & $Af\rho_{max}$ \ul{[\si{\cm}]} & $\rho_{max}$ \ul{[\si{\km}]}\\
+            \midrule
+            \multicolumn{4}{l}{\textbf{C/2019 L3}} \\
+            2021-03-28.729 & 13611 $\pm$ 1874 & 13615 $\pm$ 1875 & 10373 \\
+            2021-04-02.739 & 9332 $\pm$ 539 & 10748 $\pm$ 618 & 20930 \\
+            2021-04-03.719 & 7959 $\pm$ 143 & 10869 $\pm$ 729 & 22093 \\
+            2021-04-04.691 & 6220 $\pm$ 69 & 9003 $\pm$ 114 & 20930 \\
+            2021-04-08.691 & 8985 $\pm$ 603 & 8700 $\pm$ 110 & 19860 \\
+            2021-04-12.724 & 7911 $\pm$ 102 & 7410 $\pm$ 269 & 29343 \\
+            2021-04-14.702 & 7320 $\pm$ 95 & 8268 $\pm$ 133 & 25822 \\
+            2021-04-15.714 & 5043 $\pm$ 244 & 8891 $\pm$ 154 & 19953 \\
+            2021-05-04.736 & 5943 $\pm$ 96 & 8320 $\pm$ 340 & 29365 \\
+            2021-05-10.735 & 7523 $\pm$ 134 & 8787 $\pm$ 205 & 29343 \\
+            2021-05-12.724 & 5701 $\pm$ 236 & 9590 $\pm$ 157 & 21127 \\
+            2021-05-14.721 & 6356 $\pm$ 152 & 9164 $\pm$ 95 & 29343 \\
+            \multicolumn{4}{l}{\textbf{C/2020 P3}} \\
+            2021-04-02.775 & 869 $\pm$ 20 & 948 $\pm$ 19 & 15789 \\
+            2021-05-11.744 & 708 $\pm$ 17 & 848 $\pm$ 17 & 19048 \\
+            2021-05-12.749 & 606 $\pm$ 31 & 801 $\pm$ 38 & 19048 \\
+            \bottomrule
+        \end{tabular}
+    \end{threeparttable}
+\end{table}
+
+
+\begin{comment}
+\begin{figure}[h]
+    %\centering
+    %\begin{subfigure}{0.5\textwidth}
+    \ContinuedFloat
+        \subcaptionbox{}{
+            \includegraphics[width=.48\linewidth]{Afrho_C2019_4.pdf}
+        }
+        \subcaptionbox{}{
+            \includegraphics[width=.48\linewidth]{Afrho_C2019_5.pdf}
+        }
+
+        \subcaptionbox{}{
+            \includegraphics[width=.48\linewidth]{Afrho_C2019_6.pdf}
+        }
+        \subcaptionbox{}{
+            \includegraphics[width=.48\linewidth]{Afrho_C2019_7.pdf}
+        }
+    %\label{fig:first}
+    %\end{subfigure}
+    \caption{(续)$Af\rho$ of comet C/2019 L3 and C/2020 P3.}
+\end{figure}
+\end{comment}
+
+\begin{comment}
+\begin{figure}[h]
+    %\centering
+    %\begin{subfigure}{0.5\textwidth}
+    
+        \subcaptionbox{}{
+            \includegraphics[width=.48\linewidth]{Afrho_C2019_0.pdf}
+        }
+        \subcaptionbox{}{
+            \includegraphics[width=.48\linewidth]{Afrho_C2019_1.pdf}
+        }
+
+    %\label{fig:first}
+    %\end{subfigure}
+    \caption{$Af\rho$ of comet C/2019 L3 and C/2020 P3.}
+    \label{fig:Afrhomax}
+\end{figure}
+\begin{figure}[h]
+    \ContinuedFloat
+    %\centering
+    %\begin{subfigure}{0.5\textwidth}
+    
+        \subcaptionbox{}{
+            \includegraphics[width=.48\linewidth]{Afrho_C2019_2.pdf}
+        }
+        \subcaptionbox{}{
+            \includegraphics[width=.48\linewidth]{Afrho_C2019_3.pdf}
+        }
+
+    %\label{fig:first}
+    %\end{subfigure}
+    \caption{$Af\rho$ of comet C/2019 L3 and C/2020 P3.}
+    %\label{fig:figures}
+\end{figure}
+\begin{figure}[h]
+    \ContinuedFloat
+    %\centering
+    %\begin{subfigure}{0.5\textwidth}
+    
+        \subcaptionbox{}{
+            \includegraphics[width=.48\linewidth]{Afrho_C2019_4.pdf}
+        }
+        \subcaptionbox{}{
+            \includegraphics[width=.48\linewidth]{Afrho_C2019_5.pdf}
+        }
+
+    %\label{fig:first}
+    %\end{subfigure}
+    \caption{$Af\rho$ of comet C/2019 L3 and C/2020 P3.}
+    %\label{fig:figures}
+\end{figure}
+\begin{figure}[h]
+    \ContinuedFloat
+    %\centering
+    %\begin{subfigure}{0.5\textwidth}
+    
+        \subcaptionbox{}{
+            \includegraphics[width=.48\linewidth]{Afrho_C2019_6.pdf}
+        }
+        \subcaptionbox{}{
+            \includegraphics[width=.48\linewidth]{Afrho_C2019_7.pdf}
+        }
+
+    %\label{fig:afr}
+    %\end{subfigure}
+    \caption{$Af\rho$ of comet C/2019 L3 and C/2020 P3.}
+    %\label{fig:Afrhomax}
+\end{figure}
+\begin{figure}[h]
+    \ContinuedFloat
+    %\centering
+    %\begin{subfigure}{0.5\textwidth}
+    
+        \subcaptionbox{}{
+            \includegraphics[width=.48\linewidth]{Afrho_C2019_8.pdf}
+        }
+        \subcaptionbox{}{
+            \includegraphics[width=.48\linewidth]{Afrho_C2019_9.pdf}
+        }
+
+    %\label{fig:first}
+    %\end{subfigure}
+    \caption{$Af\rho$ of comet C/2019 L3 and C/2020 P3.}
+    %\label{fig:figures}
+\end{figure}
+\begin{figure}[h]
+    \ContinuedFloat
+    %\centering
+    %\begin{subfigure}{0.5\textwidth}
+    
+        \subcaptionbox{}{
+            \includegraphics[width=.48\linewidth]{Afrho_C2019_10.pdf}
+        }
+        \subcaptionbox{}{
+            \includegraphics[width=.48\linewidth]{Afrho_C2019_11.pdf}
+        }
+
+    %\label{fig:first}
+    %\end{subfigure}
+    \caption{$Af\rho$ of comet C/2019 L3 and C/2020 P3.}
+    %\label{fig:Afrhomax}
+\end{figure}
+\begin{figure}[h]
+    \ContinuedFloat
+    %\centering
+    %\begin{subfigure}{0.5\textwidth}
+    
+        \subcaptionbox{}{
+            \includegraphics[width=.48\linewidth]{Afrho_C2020_0.pdf}
+        }
+        \subcaptionbox{}{
+            \includegraphics[width=.48\linewidth]{Afrho_C2020_1.pdf}
+        }
+
+    %\label{fig:first}
+    %\end{subfigure}
+    \caption{$Af\rho$ of comet C/2019 L3 and C/2020 P3.}
+    %\label{fig:Afrhomax}
+\end{figure}
+\begin{figure}[h]
+    \ContinuedFloat
+    %\centering
+    %\begin{subfigure}{0.5\textwidth}
+    
+        \subcaptionbox{}{
+            \includegraphics[width=.48\linewidth]{Afrho_C2020_2.pdf}
+        }
+        \subcaptionbox{}{
+            \includegraphics[width=.48\linewidth]{Afrho_C2020_3.pdf}
+        }
+
+    %\label{fig:first}
+    %\end{subfigure}
+    \caption{$Af\rho$ of comet C/2019 L3 and C/2020 P3.}
+    %\label{fig:Afrhomax}
+\end{figure}
+\end{comment}
+
+
+
+\begin{comment}
+% Afrho_max
+\begin{table}[!htbp]
+    \centering
+    \caption{Review of images: C/2019 L3 and C/2020 P3}\label{tab:c2019andc2020}
+    \tiny
+    \begin{threeparttable}
+        \begin{tabular}{cccc}
+            \toprule
+            Observation Date & $Afrho_{max}$ & $Af\rho_{err}$ & $\rho_{max}$ \\
+            \midrule
+            \multicolumn{8}{c}{\textbf{C/2019 L3}} \\
+            2021-03-28 & 4.385 & 4.916 & 10.4 \\
+            2021-04-02 & 4.360 & 4.933 & 10.1 \\
+            2021-04-03 & 4.355 & 4.936 & 10.1 \\
+            2021-04-04 & 4.350 & 4.939 & 10.0 \\
+            2021-04-08 & 4.331 & 4.950 & 9.7  \\
+            2021-04-12 & 4.311 & 4.960 & 9.5  \\
+            2021-04-14 & 4.301 & 4.965 & 9.3  \\
+            2021-04-15 & 4.296 & 4.967 & 9.3  \\
+            2021-05-04 & 4.205 & 4.987 & 8.0  \\
+            2021-05-10 & 4.177 & 4.985 & 7.6  \\
+            2021-05-12 & 4.168 & 4.984 & 7.5  \\
+            2021-05-14 & 4.159 & 4.982 & 7.4  \\
+
+            \multicolumn{8}{c}{\textbf{C/2020 P3}} \\
+            2021-03-28 & 6.956 & 6.814 & 8.2 \\
+            2021-04-02 & 6.990 & 6.813 & 8.2 \\
+            2021-05-11 & 4.205 & 7.216 & 6.814  \\
+            2021-05-12 & 4.159 & 7.221 & 6.814  \\
+            \bottomrule
+        \end{tabular}
+        \begin{tablenotes}
+            \item[1] heliocentric distance
+            \item[2] geocentric distance
+            \item[3] phase angle
+        \end{tablenotes}
+    \end{threeparttable}
+\end{table}
+\end{comment}
+
+
+\begin{comment}
+%%%%%%%% Continue figures %%%%%%%%
+        
+\begin{figure}[h]
+    \ContinuedFloat
+    
+    \begin{subfigure}{\textwidth}
+    \centering
+    \includegraphics[width=0.7\textwidth]{Afrho_C2019_1.pdf}
+    \caption{Second subfigure.}
+    \label{fig:second}
+    \end{subfigure}
+    \begin{subfigure}{\textwidth}
+    \centering
+    \includegraphics[width=0.7\textwidth]{Afrho_C2019_2.pdf}
+    \caption{Third subfigure.}
+    \label{fig:third}
+    \end{subfigure}
+    
+    \caption{Page breaks and subfigures.}
+    \label{fig:figures}
+    
+\end{figure}
+\end{comment}
+
+%平均尘埃生成率的计算如~\autoref{eq:dpr}~所示：
+
+%\begin{equation}
+%    \frac{\mathrm{d}M}{\mathrm{d}t} = \frac{4}{3} \frac{\rho \bar{a} C_e}{\tau_r}
+%    \label{eq:dpr}
+%\end{equation}
+
+%式中，$\rho$是喷射的固体物质的体积密度，$\bar{a}$是颗粒的加权平均半径，$C_e$是测光孔径下的散射截面，$\tau_r$是尘埃在孔径中的停留时间。
+
+\subsection{Coma Colors}
+
+The photometric results in \autoref{tab:bvr} also summarises the color index of the two comets. \ul{
+The average colors for C/2019 L3 are as follows: 
+$\langle \mathrm{B} - \mathrm{V} \rangle = \num{0.75 +- 0.06}$, 
+$\langle \mathrm{V} - \mathrm{R} \rangle = \num{0.27 +- 0.05}$, and 
+$\langle \mathrm{R} - \mathrm{I} \rangle = \num{0.22 +- 0.05}$. 
+On the other hand, the average colors for C/2020 P3 are 
+$\langle \mathrm{B} - \mathrm{V} \rangle = \num{0.95 +- 0.07}$, 
+$\langle \mathrm{V} - \mathrm{R} \rangle = \num{0.29 +- 0.05}$, and 
+$\langle \mathrm{R} - \mathrm{I} \rangle = \num{0.21 +- 0.05}$. 
+} 
+Moreover, in order to indicate how the scattered color of the dusty coma varies with wavelengths, the reddening $\mathcal{R}$ (or normalized color) \citep{jewitt_cometary_1986, lara_behaviour_2003, mazzotta_epifani_dust_2011, shi_ccd_2015} is calculated in \si{\percent/\kilo\angstrom}, with the formula given as \autoref{eq:red}: 
+\begin{equation}
+\mathcal{R} = \frac{2}{Af\rho_1 + Af\rho_2} \frac{Af\rho_2 - Af\rho_1}{\lambda_2 - \lambda_1}, 
+\label{eq:red}
+\end{equation}
+where $\lambda_1$ and $\lambda_2$ are the central wavelengths of the filters in \si{\nm} (respectively the centers of B and R filters, {\SI{440}{\nm}} and {\SI{658}{\nm}}). With this parameter it is convenient to indicate the percentage of change in the strength of the continuum per {\SI{1000}{\angstrom}}. The results of dust reddening are summarised in \autoref{tab:reddening}. In order to avoid the possible effects from background residuals, it is calculated with aperture of {\SI{2e4}{\km}}. 
+
+For comet C/2019 L3, the reddening undergoes significant variations over time, from positive value {\SI{13.75 +- 1.07}{\percent/\kilo\angstrom}} on \DTMdate{2021-3-28} to negative value {\SI{-15.69 +- 0.37}{\percent/\kilo\angstrom}} on \DTMdate{2021-4-12}. We plot the reddening as a function of date in \autoref{fig:reddening}, and the averaged value \num{0.94 +- 0.23} is marked as a horizontal blue dotted line. For comet C/2020 P3, only on \DTMdate{2021-5-12} is its observational data sufficient for the calcltaion of reddening with a result of {\SI{-6.65 +- 0.01}{\percent/\kilo\angstrom}}. 
+
+\begin{table}[!htbp]
+    \centering
+    \caption{Reddening of comet C/2019 L3 and C/2020 P3 with $\rho = $ \SI{2e4}{\km} }\label{tab:reddening}
+    \begin{threeparttable}
+        \begin{tabular}{cccc}
+            \toprule
+            Observation Time & B-band $Af\rho$ & R-band $Af\rho$ & reddening [\si{\%/\kilo\angstrom}]\\
+            \midrule
+            \multicolumn{4}{l}{\textbf{C/2019 L3}} \\
+            2021-03-28.729 & 9472 $\pm$ 753 & 12811 $\pm$ 1764 & \num{13.75 +- 1.07}\\
+            2021-04-02.739 & 8763 $\pm$ 806 & 10719 $\pm$ 617 & \num{9.21 +- 0.50}\\
+            2021-04-03.719 & 9886 $\pm$ 274 & 9538 $\pm$ 156 & \num{-1.65 +- 0.03}\\
+            2021-04-04.691 & 9501 $\pm$ 343 & 8734 $\pm$ 93 & \num{-3.86 +- 0.07}\\
+            2021-04-08.691 & 9288 $\pm$ 402 & 10797 $\pm$ 725 & \num{6.89 +- 0.27}\\
+            2021-04-12.724 & 12683 $\pm$ 602 & 8979 $\pm$ 113 & \num{-15.69 +- 0.37}\\
+            2021-04-14.702 & 8809 $\pm$ 382 & 8700 $\pm$ 110 & \num{-0.57 +- 0.01}\\
+            2021-04-15.714 & 6077 $\pm$ 283 & 7173 $\pm$ 271 & \num{7.59 +- 0.23}\\
+            2021-05-04.736 & 7724 $\pm$ 264 & 8065 $\pm$ 130 & \num{1.98 +- 0.04}\\
+            2021-05-10.735 & 9030 $\pm$ 285 & 8891 $\pm$ 154 & \num{-0.71 +- 0.01}\\
+            2021-05-12.724 & 9044 $\pm$ 336 & 7958 $\pm$ 326 & \num{-5.86 +- 0.16}\\
+            2021-05-14.721 & 8428 $\pm$ 258 & 8475 $\pm$ 199 & \num{0.25 +- 0.00}\\
+            \multicolumn{4}{l}{\textbf{C/2020 P3}} \\
+            2021-05-12.749 & 934 $\pm$ 74 & 799 $\pm$ 37 & \num{-6.65 +- 0.01}\\
+            \bottomrule
+        \end{tabular}
+    \end{threeparttable}
+\end{table}
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=.6\linewidth]{reddening.pdf}
+    \caption{The reddening of comet C/2019 L3 with date, blue dotted line is the averaged reddening. }\label{fig:reddening}
+\end{figure}
