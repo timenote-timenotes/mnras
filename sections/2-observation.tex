@@ -65,25 +65,25 @@ The observations on two comets metioned above were conducted using three differe
             \item[4] numbers after `$\times$' indicate amounts of images under corresponding filters, \\
             `C' means `clear glass'
             \item[5] size of original image
-            \item[6] the calculated image scale in \si{\km/pixel}
+            \item[6] the calculated image scale in \si{\km} per pixel
         \end{tablenotes}
     \end{threeparttable}
 \end{table}
 
 \subsection{Data reduction}
 
-All of the images had been corrected with common methods for dark subtraction, bias subtraction and flat-field normalization when ISON provided the observational data for this research. In order to raise the signal/noise ratio, images on different observational dates were aligned and sum combined for different filters according to the photocenter of comet. The same thing was also done on the basis of photocenter of background star as the motion of comet in each frame is obvious. Several tasks in {\href{https://github.com/iraf-community/iraf}{IRAF}}, i.e., the \textbf{I}mage \textbf{R}eduction and \textbf{A}nalysis \textbf{F}acility, were applied for this procedure, including \texttt{center}, \verb|imshift| and \verb|combine|. Since the comet and reference stars for photometry are in the same frame, the airmass correction is not necessary. Given that some images are in the case where comet gets too close to the background stars around, psf subtraction was conducted to cover up these stars with tasks such as \verb|substar|. 
+All of the images had been corrected with common methods for dark subtraction, bias subtraction and flat-field normalization when ISON provided the observational data for this research. In order to raise the signal-to-noise ratio, images on different observational dates were aligned and sum combined for different filters according to the photocenter of comet. The same thing was also done on the basis of photocenter of background star as the motion of comet in each frame is obvious. Several tasks in {\href{https://github.com/iraf-community/iraf}{IRAF}}, i.e., the \textbf{I}mage \textbf{R}eduction and \textbf{A}nalysis \textbf{F}acility, were applied for this procedure, including \texttt{center}, \verb|imshift| and \verb|combine|. Since the comet and reference stars for photometry are in the same frame, the airmass correction is not necessary. Given that some images are in the case where comet gets too close to the background stars around, psf subtraction was conducted to cover up these stars with tasks such as \verb|substar|. 
 
 With several photometric tasks in IRAF, the instrunment magnitudes of two comets were calculated, as well as comparison stars in each frame. Then the apparent magnitudes were obtained by differential photometry. The photometric calibration of these two comets' data was performed with the UCAC4 \citep{zacharias_fourth_2013} and UCAC5 \citep{zacharias_ucac5_2017} catalogues in 
 {\href{http://aladin.u-strasbg.fr}{Aladin}} 
 where positions, B, V, and R magnitudes for comparison stars can be queryed easily. Additionally, the GCVS 5.1 \citep{samus_general_2017} catalogue was applied to inspect the variability of all the comparison stars. 
 
-In order to measure the  instrunment magnitudes of comets and comparison stars, circular aperture photometry was applied. The photometric aperture of comparison stars was determined by nearly \si{\num{2}} times the full-wide at half-maximum (FWHM). Since three different telescopes were involved during the observation, the photometry of comets was performed on different apertures centered on the comet photocenter, with all of them ensured to be up to \si{\num{1.5}} times the full-wide at half-maximum and close to each other in arcsecond as much as possible. The photometric results are listed as Table~\ref{tab:bvr}, and the error of photometry is derived from equation (\ref{eq:err}) as follows: 
+In order to measure the  instrunment magnitudes of comets and comparison stars, circular aperture photometry was applied. The photometric aperture of comparison stars was determined by nearly \si{\num{2}} times the full-wide at half-maximum (FWHM). Since three different telescopes were involved during the observation, the photometry of comets was performed on different apertures centered on the comet photocenter, with all of them ensured to be up to \si{\num{1.5}} times the full-wide at half-maximum and close to each other in arcsecond as much as possible. The photometric results are listed as Table~\ref{tab:bvr}, and the error of photometry $e_{\mathrm{phot}}$ is derived from equation (\ref{eq:err}) as follows: 
 \begin{equation}
-    Error = \sqrt{e_{c}^{2} + \sigma^2}, 
+    e_{\mathrm{phot}} = \sqrt{e_{c}^{2} + \sigma_s^2}, 
     \label{eq:err}
 \end{equation}
-where $e_c$ is the magnitude error of comet from IRAF photometric file and $\sigma$ is the standard deviation of the calibration values in differential photometry. 
+where $e_c$ is the magnitude error of comet from IRAF photometric file and $\sigma_s$ is the standard deviation of the calibration values in differential photometry. 
 
 
 \begin{comment}

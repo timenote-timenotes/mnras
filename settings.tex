@@ -19,24 +19,21 @@
 }
 \DTMsetdatestyle{mnras}
 % \DTMtryregional{en}{GB}
-%\DTMsetdatestyle{default} % default iso yyyymd ddmmyyyy
-%\DTMsetup{datesep={/}} % 设置日期分隔符
-
+% \DTMsetdatestyle{default} % default iso yyyymd ddmmyyyy
+% \DTMsetup{datesep={/}}
 \usepackage{soul}
 \setulcolor{blue}
 \setstcolor{red}
 \sethlcolor{yellow}
-% 针对\cite和\ref命令 (通常用下面两个)
 \soulregister\cite7
 \soulregister\ref7
 \soulregister\autoref7
-% 针对其他命令
-\soulregister\citep7 % 针对\citep命令
-\soulregister\citet7 % 针对\citet命令
+\soulregister\citep7
+\soulregister\citet7
 \soulregister\citealp7
 \soulregister\citealt7
-\soulregister\pageref7 % 针对\pageref命令
-\soulregister{\tetbf}{7}
+\soulregister\pageref7
+\soulregister{\textbf}{7}
 \soulregister{\href}{1}
 \soulregister{\si}{7}
 \soulregister{\SI}{1}
@@ -44,6 +41,6 @@
 \soulregister{\ce}{7}
 \soulregister\DTMdate7
 
-\newcommand*{\dif}{\mathop{}\!\mathrm{d}} % 定义微分算子
+\newcommand*{\dif}{\mathop{}\!\mathrm{d}}
 
 % \usepackage{showframe}
