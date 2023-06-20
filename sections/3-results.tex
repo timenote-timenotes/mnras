@@ -137,7 +137,7 @@ Due to the phase darkening effect, it is necessary to adjust $Af\rho$ values at 
 \begin{equation}
     A(0)f\rho = \frac{A(\alpha)f\rho}{\phi(\alpha)}, \label{eq:a0frho}
 \end{equation}
-where $\alpha$ is the phase angle, and $\phi$ is the phase function. A composite phase function (see \citealt{schleicher_composition_2011, marcus_forward-scattering_2007}) suggested by {\href{https://asteroid.lowell.edu/comet/dustphase.html}{D. Schleicher}} is suitable for adjustion in this work. The related {\href{https://asteroid.lowell.edu/comet/dustphaseHM_table.html}{dustphaseHM\_table}} provides the phase function with phase angle in the $\ang{0} \leqslant \alpha \leqslant \ang{180}$ range, and we adopt cubic spline interpolation method on it to obtain unlisted values. 
+where $\alpha$ is the phase angle, and $\phi$ is the phase function. A composite phase function (see \citealt{schleicher_composition_2011, marcus_forward-scattering_2007}) suggested by D. Schleicher\footnote{\href{https://asteroid.lowell.edu/comet/dustphase.html}{https://asteroid.lowell.edu/comet/dustphase.html}} is suitable for adjustion in this work. The related dustphaseHM\_table\footnote{\href{https://asteroid.lowell.edu/comet/dustphaseHM_table.html}{https://asteroid.lowell.edu/comet/dustphaseHM\_table.html}} provides the phase function with phase angle in the $\ang{0} \leqslant \alpha \leqslant \ang{180}$ range, and we adopt cubic spline interpolation method on it to obtain unlisted values. 
 
 Fig.~\ref{fig:Afrho} shows some part of the R-band $Af\rho$ profiles, and results for the maximum of $Af\rho$ and the aperture corresponding to this maximum are summarised in Table~\ref{tab:afrho}. When a comet possesses steady coma, its $Af\rho$ will be independent of aperture. In this paper, as is shown in Fig.~\ref{fig:Afrho}, that is not the case for comet C/2019 L3 or C/2020 P3, both of which reveal a steep increse in $Af\rho$ with the aperture $\rho$ near the comet center along with a smooth decrese with larger aperture. The increase results from usually the effect of seeing and observational circumstance, while the nonsteady dust emmission and possibly the fading or destruction of dust grain bring the decrease \citep{lara_behaviour_2003,tozzi_imaging_2003}.  
              
@@ -170,6 +170,7 @@ Fig.~\ref{fig:Afrho} shows some part of the R-band $Af\rho$ profiles, and result
     \centering
     \caption{$Af\rho$ values for comet C/2019 L3 and C/2020 P3. }\label{tab:afrho}
     \begin{threeparttable}
+        \resizebox{\linewidth}{!}{
         \begin{tabular}{cccc}
             \toprule
             Observation Time & $Af\rho$ ($\rho =$ \SI{e4}{\km}) & $Af\rho_{max}$ [\si{\cm}] & $\rho_{max}$ [\si{\km}]\\
@@ -193,6 +194,7 @@ Fig.~\ref{fig:Afrho} shows some part of the R-band $Af\rho$ profiles, and result
             2021-05-12.749 & \num{606 +- 31} & \num{801 +- 38} & \num{19048} \\
             \bottomrule
         \end{tabular}
+        }
     \end{threeparttable}
 \end{table}
 
@@ -461,6 +463,7 @@ For comet C/2019 L3, the reddening undergoes significant variations over time, f
     \centering
     \caption{Reddening of comet C/2019 L3 and C/2020 P3 with $\rho = $ \SI{2e4}{\km} }\label{tab:reddening}
     \begin{threeparttable}
+        \resizebox{\linewidth}{!}{
         \begin{tabular}{cccc}
             \toprule
             Observation Time & B-band $Af\rho$ & R-band $Af\rho$ & reddening [\si{\%/\kilo\angstrom}]\\
@@ -482,6 +485,7 @@ For comet C/2019 L3, the reddening undergoes significant variations over time, f
             2021-05-12.749 & \num{934 +- 74} & \num{799 +- 37} & \num{-6.65 +- 0.01}\\
             \bottomrule
         \end{tabular}
+        }
     \end{threeparttable}
 \end{table}
 
