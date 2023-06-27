@@ -94,21 +94,6 @@ The photometric results are listed as Table~\ref{tab:bvr}, and the error of phot
 where $e_c$ is the magnitude error of comet from IRAF photometric file and $\sigma_s$ is the standard deviation of the calibration values in differential photometry. 
 
 
-\begin{comment}
-孔径测光(UCAC4, UCAC5)
-
-PSF减星
-
-图像合并
-
-由于同一天的观测数据较多，本文将同一天同一波段的图像合并后再进行测光，测光时使用到\verb|iraf|中的\verb|apphot|等天文软件包。研究过程中发现，部分图像中彗星与某些恒星位置过近，因此在合并之前将对应位置的恒星通过\verb|daophot|包中的\verb|psf, substar|等命令（task）进行PSF减星的操作，掩盖彗星附近的背景恒星。
-
-经过初始的合并后，得到的合并图像信息如下表所示
-
-考虑到在一定时间跨度内彗星相对于背景恒星会有显著的运动，对每组图像的合并分为两部分，一部分是参考彗星对齐进行合并，另一部分参考背景恒星对齐进行合并。
-
-参考星的BVR三个波段的标准星等从星表UCAC4和UCAC5中获取，并使用GCVS 5.1星表排除了参考星中可能存在的变星。aligned on the comet photocenter
-\end{comment}
 
 
 
