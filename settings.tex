@@ -5,16 +5,19 @@
 \usepackage{booktabs}
 \usepackage{threeparttable}
 \usepackage{makecell}
+
 \usepackage{siunitx}
 \sisetup{
 	separate-uncertainty = true,
 	% inter-unit-product = \ensuremath{{}\cdot{}}
 }
+\DeclareSIUnit\angstrom{\text{\AA}}
+
 \usepackage[version=4]{mhchem}
-\usepackage{datetime2}
-\usepackage{datetime2-calc}
+\usepackage[calc]{datetime2}
+% \usepackage{datetime2-calc}
 \DTMnewdatestyle{mnras}{  % set the date format for mnras
-    \renewcommand{\DTMdisplaydate}[4]{##1 \DTMmonthname{##2} \number##3 }
+    \renewcommand{\DTMdisplaydate}[4]{##1 \pgfcalendarmonthname{##2} \number##3 }
     \renewcommand{\DTMDisplaydate}{\DTMdisplaydate}
 }
 \DTMsetdatestyle{mnras}
@@ -36,6 +39,7 @@
 \soulregister{\textbf}{7}
 \soulregister{\href}{1}
 \soulregister{\si}{7}
+\soulregister{\qty}{1}
 \soulregister{\SI}{1}
 \soulregister{\ang}{7}
 \soulregister{\ce}{7}
