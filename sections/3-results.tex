@@ -2,7 +2,7 @@
 
 \subsection{Morphology}
 
-The original images of C/2019 L3 in the R band exhibit greater clarity compared to images in other bands, and they all resemble a star-like appearance. On the other hand, the original images of C/2020 P3 appear very faint, and the ones taken in the R band are also relatively clearer than those in other bands. Unlike C/2019 L3, some images of C/2020 P3 reveal the presence of an extended tail. After applying the data reduction process mentioned before, we get one image for each filter on each observational date. Fig.~\ref{fig:combinedimg} is a thumbnail view of the reduction result with comet located in center of each small parts whose field of view are all $\ang{;2;} \times \ang{;2;}$. On \DTMdate{2021-5-14}, images of comet C/2019 L3 were taken by two telescope, thus in Fig.~\ref{fig:combinedimg} there are two groups of thunbnails on this date with the upper one by telescope ZTSh and the lower one by telescope Maksutov, so were images of comet C/2020 P3 on \DTMdate{2021-5-12}. The black spots in several part of this view are due to the psf subtraction process, as it is not always perfect for star subtraction. For comet C/2019 L3, the observational record is abundant. The I band filter was added in the observation from 2021 May, providing more data for this study. From the combined images of C/2019 L3, it is easily to notice that this comet is very round and seemingly isotropic. For comet C/2020 P3, there are few data and in some cases it is hard to identify in single image. However, its extended coma looking like a tail is more obvious, especially for the images taken on \DTMdate{2021-5-12}, which roughly measured \ang{;;20} from comet center in R-band image. 
+The original images of C/2019 L3 in the R band exhibit greater clarity compared to images in other bands, and they all resemble a star-like appearance. On the other hand, the original images of C/2020 P3 appear very faint, and the ones taken in the R band are also relatively clearer than those in other bands. Unlike C/2019 L3, some images of C/2020 P3 reveal the presence of an extended tail. After applying the data reduction process mentioned before, we get one image for each filter on each observational date. Fig.~\ref{fig:combinedimg} is a thumbnail view of the reduction result with comet located in center of each small parts whose field of view are all $\ang{;2;} \times \ang{;2;}$. \st{On \DTMdate{2021-5-14}, images of comet C/2019 L3  were taken by two telescope,}\ul{Two different telescopes were involved in observing comet C/2019 L3 on \DTMdate{2021-5-14},} thus in Fig.~\ref{fig:combinedimg} there are two groups of thunbnails on this date with the upper one by telescope ZTSh and the lower one by telescope Maksutov, \st{so were images of} \ul{and the same applies to} comet C/2020 P3 on \DTMdate{2021-5-12}. The black spots in several part of this view are due to the psf subtraction process, as it is not always perfect for star subtraction. For comet C/2019 L3, the observational record is abundant. The I band filter was added in the observation from 2021 May, providing more data for this study. From the combined images of C/2019 L3, it is easily to notice that this comet is very round and seemingly isotropic. For comet C/2020 P3, there are few data and in some cases it is hard to identify in single image. However, its extended coma looking like a tail is more obvious, especially for the images taken on \DTMdate{2021-5-12}, which roughly measured \ang{;;20} from comet center in R-band image. 
 
 For morphology analysis, it is necessasy to apply some image enhancement techniques with which we can recognize some features and structures hidden in coma \citep{samarasinha_image_2014}. Many pieces of software have been developed for comet image enhancement, such as Astroart 8\footnote{\href{https://www.msb-astroart.com/down_en.htm}{https://www.msb-astroart.com/down\_en.htm}} and online tool Cometary Coma Image Enhancement Facility\footnote{\href{https://www.psi.edu/research/cometimen}{https://www.psi.edu/research/cometimen}}. In this work, 
 we applied azimuthal renormalization method on images of C/2019 L3 on \DTMdate{2021-5-14} by telescope Maksutov since other images are too faint and show no evident features after enhanced. The result is shown in Fig.~\ref{fig:aziren}, where the enhanced images under V and R filters show a small northeastward fan-shape structure, while the enhanced images under B and I filters give no obvious feature.  
@@ -111,7 +111,7 @@ Note that in Fig.~\ref{fig:sbp} the SBP is expressed as magnitude, and according
 % 考虑放置最大、最小、中位数对应图像
 \begin{figure}
     \centering
-    \includegraphics[width=\columnwidth]{sbp-210504.pdf}
+    \includegraphics[width=\columnwidth]{sbp-210504-3.pdf}
     \caption{An example figure for R-band surface brightness of comet C/2019 L3. The error plot is the SBP of comet, and the blue solid line is the SBP of a background star. The blue dotted line is a linear regression result of comet's SBP vs $\lg{\rho}$ with $\lg{\rho}$ between 0.5 and 1.0, and the gradient $m$ related to the slope is marked on the graph with an arrow. }
     \label{fig:sbp}
 \end{figure}
@@ -119,21 +119,21 @@ Note that in Fig.~\ref{fig:sbp} the SBP is expressed as magnitude, and according
 \begin{figure}
     \centering
     \includegraphics[width=\columnwidth]{sbp_m.pdf}
-    \caption{The $m$ of R-band surface brightness of comet C/2019 L3 with date, blue dotted line is the averaged m. }
+    \caption{The $m$ of R-band surface brightness of comet C/2019 L3 with date, blue dashed line is the averaged $m$, \ul{around which is a red shadow representing the error}. }
     \label{fig:sbp_m}
 \end{figure}
 
 
 \subsection{$Af\rho$}
 
-The $Af\rho$ value introduced by \citet{ahearn_comet_1984}, where $A$ represents the gain albedo, $f$ the filling factor, and $\rho$ the aperture, is commonly used to indicate the dust production activity of comets. Usually it is expressed in \si{\cm} as equation (\ref{eq:afr}): 
+The $Af\rho$ value introduced by \citet{ahearn_comet_1984}, where $A$ represents the grain albedo, $f$ the filling factor, and $\rho$ the aperture, is commonly used to indicate the dust production activity of comets. Usually it is expressed in \si{\cm} as equation (\ref{eq:afr}): 
 \begin{equation}
     Af\rho = \frac{4 r^2 \Delta^2}{\rho} 10^{0.4(M_\odot - M_\mathrm{c})}, 
     \label{eq:afr}
 \end{equation}
-where $r$ is the heliocentric distance in \si{\astronomicalunit}, $\Delta$ the geocentric distance in \si{\km}, $\rho$ the aperture in \si{\km}, $M_\odot$ the absolute magnitude of the Sun (\si{\num{-26.13}} and \si{\num{-27.15}} for B and R filter, see \citealt{willmer_absolute_2018}), and $M_\mathrm{c}$ the corresponding magnitude of comet under the aperture of $\rho$. 
+where $r$ is the heliocentric distance in \si{\astronomicalunit}, $\Delta$ the geocentric distance in \si{\km}, $\rho$ the aperture in \si{\km}, $M_\odot$ the absolute magnitude of the Sun (respectively \num{-26.13} and \num{-27.15} for B and R filters, see \citealt{willmer_absolute_2018}), and $M_\mathrm{c}$ the corresponding magnitude of comet under the aperture of $\rho$. 
 
-Due to the phase darkening effect, it is necessary to adjust $Af\rho$ values at different phase angles to a specific angle. In this work, all observations were conducted at small phase angles, and we normalize the $Af\rho$ values to a phase angle of \ang{0} using equation (\ref{eq:a0frho}), as shown below:
+Due to the phase darkening effect, it is necessary to adjust $Af\rho$ values at different phase angles to a specific angle. In this work, all observations were conducted at small phase angles, and we normalize the $Af\rho$ values to a phase angle of \ang{0} using equation (\ref{eq:a0frho}), as is shown below:
 \begin{equation}
     A(0)f\rho = \frac{A(\alpha)f\rho}{\phi(\alpha)}, \label{eq:a0frho}
 \end{equation}
@@ -151,11 +151,11 @@ Fig.~\ref{fig:Afrho} shows some part of the R-band $Af\rho$ profiles, and result
     %     \includegraphics[width=.6\columnwidth]{R-Afrho-C2019L3-210415.pdf}
     % }
     \subcaptionbox{R-band $A(0)f\rho$ of comet C/2019 L3}{
-        \includegraphics[width=\columnwidth]{R-Afrho-C2019L3-210514.pdf}
+        \includegraphics[width=\columnwidth]{R-A0frho-C2019L3-210514-119.pdf}
     }
 
     \subcaptionbox{R-band $A(0)f\rho$ of comet C/2020 P3}{
-        \includegraphics[width=\columnwidth]{R-Afrho-C2020P3-210402.pdf}
+        \includegraphics[width=\columnwidth]{R-A0frho-C2020P3-210402.pdf}
     }
     % \subcaptionbox{}{
     %     \includegraphics[width=.6\columnwidth]{R-Afrho-C2020P3-210512.pdf}
@@ -492,5 +492,5 @@ For comet C/2019 L3, the reddening undergoes significant variations over time, f
 \begin{figure}
     \centering
     \includegraphics[width=\columnwidth]{reddening.pdf}
-    \caption{The reddening of comet C/2019 L3 with date, blue dotted line is the averaged reddening. }\label{fig:reddening}
+    \caption{The reddening of comet C/2019 L3 with date, blue dashed line is the averaged reddening, \ul{and the surounding red shadow shows the error}. }\label{fig:reddening}
 \end{figure}
