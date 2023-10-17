@@ -126,7 +126,7 @@ Note that in Fig.~\ref{fig:sbp} the SBP is expressed as magnitude, and according
 
 \subsection{$Af\rho$}
 
-The $Af\rho$ value introduced by \citet{ahearn_comet_1984}, where $A$ represents the grain albedo, $f$ the filling factor, and $\rho$ the aperture, is commonly used to indicate the dust production activity of comets. Usually it is expressed in \si{\cm} as equation (\ref{eq:afr}): 
+The $Af\rho$ value introduced by \citet{ahearn_comet_1984}, where $A$ represents the grain albedo, $f$ the filling factor, and $\rho$ the aperture, is commonly used to indicate the dust production activity of comets. Usually it is expressed in units of [\unit{\cm}] as equation (\ref{eq:afr}): 
 \begin{equation}
     Af\rho = \frac{4 r^2 \Delta^2}{\rho} 10^{0.4(M_\odot - M_\mathrm{c})}, 
     \label{eq:afr}
@@ -139,7 +139,7 @@ Due to the phase darkening effect, it is necessary to adjust $Af\rho$ values at 
 \end{equation}
 where $\alpha$ is the phase angle, and $\phi$ is the phase function. A composite phase function (see \citealt{schleicher_composition_2011, marcus_forward-scattering_2007}) suggested by D. Schleicher\footnote{\url{https://asteroid.lowell.edu/comet/dustphase.html}} is suitable for adjustion in this work. The related tabular data (\verb|dustphaseHM_table.txt|\footnote{\url{https://asteroid.lowell.edu/comet/dustphaseHM_table.html}}) provides the phase function with phase angle in the $\ang{0} \leqslant \alpha \leqslant \ang{180}$ range, and we adopt cubic spline interpolation method on it to obtain unlisted values. 
 
-Fig.~\ref{fig:Afrho} shows some part of the R-band $Af\rho$ profiles, and results for the maximum of $Af\rho$ and the aperture corresponding to this maximum are summarised in Table~\ref{tab:afrho}. When a comet possesses steady coma, its $Af\rho$ will be independent of aperture. In this paper, as is shown in Fig.~\ref{fig:Afrho}, that is not the case for comet C/2019 L3 or C/2020 P3, both of which reveal a steep increse in $Af\rho$ with the aperture $\rho$ near the comet center along with a smooth decrese with larger aperture. The increase results from usually the effect of seeing and observational circumstance, while the nonsteady dust emmission and possibly the fading or destruction of dust grain bring the decrease \citep{lara_behaviour_2003,tozzi_imaging_2003}.  
+Fig.~\ref{fig:Afrho} shows some part of the R-band $Af\rho$ profiles, and results for the maximum of $Af\rho$ as well as the corresponding aperture on each date are summarised in Table~\ref{tab:afrho}. When a comet possesses steady coma, its $Af\rho$ will be independent of aperture. In this paper, as is shown in Fig.~\ref{fig:Afrho}, that is not the case for comet C/2019 L3 or C/2020 P3, both of which reveal a steep increse in $Af\rho$ with the aperture $\rho$ near the comet center along with a smooth decrese with larger aperture. The increase results from usually the effect of seeing and observational circumstance, while the nonsteady dust emmission and possibly the fading or destruction of dust grain bring the decrease \citep{lara_behaviour_2003,tozzi_imaging_2003}.  
              
 % 可选择相同日心距范围内的其他长周期彗星进行比较
 
@@ -442,7 +442,7 @@ Fig.~\ref{fig:Afrho} shows some part of the R-band $Af\rho$ profiles, and result
 \subsection{Coma Colors}
 
 The photometric results in Table~\ref{tab:bvr} also summarises the color index of the two comets. 
-Fig.~\ref{fig:color-r} is the color indices $\mathrm{B}-\mathrm{V}$, $\mathrm{V}-\mathrm{R}$, and $\mathrm{R}-\mathrm{I}$ of C/2019 L3 as a function of heliocentric distance in \si{\astronomicalunit}, all exhibiting variability during the approach to perihelion. 
+Fig.~\ref{fig:color-r} is the color indices $\mathrm{B}-\mathrm{V}$, $\mathrm{V}-\mathrm{R}$, and $\mathrm{R}-\mathrm{I}$ of C/2019 L3 as a function of heliocentric distance in units of [\unit{\astronomicalunit}], all exhibiting variability during the approach to perihelion. 
 As C/2019 L3 approached perihelion, its $\mathrm{V}-\mathrm{R}$ color index showed a tendency towards blue. 
 Considering its position at a heliocentric distance of about {\SI{4}{\astronomicalunit}}, with a temperature of around {\SI{140}{\K}}, the gas-driven effects are significant. 
 The colors for C/2019 L3 are as follows: 
@@ -465,7 +465,7 @@ Moreover, in order to indicate how the scattered color of the dusty coma varies 
 \mathcal{R} = \frac{2}{Af\rho_1 + Af\rho_2} \frac{Af\rho_2 - Af\rho_1}{\lambda_2 - \lambda_1}, 
 \label{eq:red}
 \end{equation}
-where $\lambda_1$ and $\lambda_2$ are the central wavelengths of the filters in \si{\nm} (respectively the centers of B and R filters, {\SI{440}{\nm}} and {\SI{658}{\nm}}). With this parameter it is convenient to indicate the percentage of change in the strength of the continuum per {\SI{1000}{\angstrom}}. The results of dust reddening are summarised in Table~\ref{tab:reddening}. In order to avoid the possible effects from background residuals, it is calculated with aperture of {\SI{2e4}{\km}}. 
+where $\lambda_1$ and $\lambda_2$ are the central wavelengths of the filters in units of [\unit{\nm}] (respectively the centers of B and R filters, {\SI{440}{\nm}} and {\SI{658}{\nm}}). With this parameter it is convenient to indicate the percentage of change in the strength of the continuum per {\SI{1000}{\angstrom}}. The results of dust reddening are summarised in Table~\ref{tab:reddening}. In order to avoid the possible effects from background residuals, it is calculated with aperture of {\SI{2e4}{\km}}. 
 
 For comet C/2019 L3, the reddening undergoes significant variations over time, from positive value {\SI{13.75 +- 1.07}{\percent/\kilo\angstrom}} on \DTMdate{2021-3-28} to negative value {\SI{-15.69 +- 0.37}{\percent/\kilo\angstrom}} on \DTMdate{2021-4-12}. We plot the reddening as a function of date in Fig.~\ref{fig:reddening}, and the averaged value {\SI{0.94 +- 0.23}{\percent/\kilo\angstrom}} is marked as a horizontal blue dotted line. For comet C/2020 P3, only on \DTMdate{2021-5-12} is its observational data sufficient for the calcltaion of reddening with a result of {\SI{-6.65 +- 0.01}{\percent/\kilo\angstrom}}. 
 
