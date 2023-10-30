@@ -98,7 +98,7 @@ we applied azimuthal renormalization method on images of C/2019 L3 on \DTMdate{2
 \subsection{Surface brightness profile}
 
 Based on the photometric results, the radial surface brightness profile (SBP) was computed as the function of the angular distance $\rho$ measured from the photocenter of comet. For this purpose, every image was trimmed from the center of the comet, and the sky value was determined by the median of the trimmed image. 
-In the case of a steady-state coma, the surface brightness $B$ is expected to follow a power-law relation with $\rho$ as $B \propto \rho^m$, where $-1.5 \leqslant m \leqslant -1.0$, and the index $m$ is often referred to as the gradient ($m=\dif\lg{B} \big/ \dif\lg{\rho}$). As the radiation pressure accelerates the dust particles, the value of $m$ decreases and approaches \si{\num{-1.5}} in the limiting case~\citep{jewitt_surface_1987}. Conversely, if the index $m$ falls below \si{\num{-1.5}}, it suggests the presence of nonsteady dust coma emission \citep{lowry_ccd_1999}.
+In the case of a steady-state coma, the surface brightness $B$ is expected to follow a power-law relation with $\rho$ as $B \propto \rho^m$, where $-1.5 \leqslant m \leqslant -1.0$, and the index $m$ is often referred to as the gradient ($m=\dif\lg{B} \big/ \dif\lg{\rho}$). As the radiation pressure accelerates the dust particles, the value of $m$ decreases and approaches \num{-1.5} in the limiting case~\citep{jewitt_surface_1987}. Conversely, if the index $m$ falls below \num{-1.5}, it suggests the presence of nonsteady dust coma emission \citep{lowry_ccd_1999}.
 
 Not only in single images does comet C/2019 L3 appear like a stellar, but also in stacked images. However, the SBP of C/2019 L3 shows it clearly the excess flux in outer region compared with stellar SBP. In Fig.~\ref{fig:sbp} we report an example plot of the R-band SBP as a function of $\lg{\rho}$ for C/2019 L3 observed on \DTMdate{2021-5-4}. The gradient $m$ in the $0.5 \leqslant \lg{\rho} \leqslant 1.0$ range is calculated by the least-squares fit to $\lg{B}$ versus $\lg{\rho}$. 
 In Fig.~\ref{fig:sbp_m}, the gradients of C/2019 L3 on each date are depicted, and the averaged value is indicated by a blue dotted line. 
@@ -127,7 +127,7 @@ The $Af\rho$ value introduced by \citet{ahearn_comet_1984}, where $A$ represents
     Af\rho = \frac{4 r^2 \Delta^2}{\rho} 10^{0.4(M_\odot - M_\mathrm{c})}, 
     \label{eq:afr}
 \end{equation}
-where $r$ is the heliocentric distance in units of [\si{\astronomicalunit}], $\Delta$ the geocentric distance in units of [\si{\km}], $\rho$ the aperture in units of [\si{\km}], $M_\odot$ the absolute magnitude of the Sun (respectively \num{-26.13} and \num{-27.15} in B and R bands, see \citealt{willmer_absolute_2018}), and $M_\mathrm{c}$ the corresponding magnitude of comet under the aperture of $\rho$. 
+where $r$ is the heliocentric distance in units of [\unit{\astronomicalunit}], $\Delta$ the geocentric distance in units of [\unit{\km}], $\rho$ the aperture in units of [\unit{\km}], $M_\odot$ the absolute magnitude of the Sun (respectively \num{-26.13} and \num{-27.15} in B and R bands, see \citealt{willmer_absolute_2018}), and $M_\mathrm{c}$ the corresponding magnitude of comet under the aperture of $\rho$. 
 
 Due to the phase darkening effect, it is necessary to adjust $Af\rho$ values at different phase angles to a specific angle. In this work, all observations were conducted at small phase angles, and we normalize the $Af\rho$ values to a phase angle of \ang{0} using equation (\ref{eq:a0frho}), as shown below:
 \begin{equation}
@@ -136,10 +136,6 @@ Due to the phase darkening effect, it is necessary to adjust $Af\rho$ values at 
 where $\alpha$ is the phase angle, and $\phi$ is the phase function. A composite phase function (see \citealt{schleicher_composition_2011, marcus_forward-scattering_2007}) suggested by D. Schleicher\footnote{\url{https://asteroid.lowell.edu/comet/dustphase.html}} is suitable for adjustion in this work. The related tabular data (\verb|dustphaseHM_table.txt|\footnote{\url{https://asteroid.lowell.edu/comet/dustphaseHM_table.html}}) provides the phase function with phase angle in the $\ang{0} \leqslant \alpha \leqslant \ang{180}$ range, and we adopt cubic spline interpolation method on it to obtain unlisted values. 
 
 Fig.~\ref{fig:Afrho} shows some part of the R-band $Af\rho$ profiles, and results for the maximum of $Af\rho$ as well as the corresponding aperture on each date are summarised in Table~\ref{tab:afrho}. When a comet possesses steady coma, its $Af\rho$ will be independent of aperture. In this paper, as is shown in Fig.~\ref{fig:Afrho}, that is not the case for comet C/2019 L3 or C/2020 P3, both of which reveal a steep increse in $Af\rho$ with the aperture $\rho$ near the comet center along with a smooth decrese with larger aperture. The increase results from usually the effect of seeing and observational circumstance, while the nonsteady dust emmission and possibly the fading or destruction of dust grain bring the decrease \citep{lara_behaviour_2003,tozzi_imaging_2003}.  
-             
-% 可选择相同日心距范围内的其他长周期彗星进行比较
-
-%其中，$r$表示日心距（以AU为单位），$\Delta$表示地心距（以km为单位），$\rho$表示以km为单位的孔径，$M_\odot$和$M_c$分别表示太阳和彗星的星等。在比较不同彗星的活动性时，通常以$\rho = 10^4km$为基准比较它们$Af\rho$值的大小。
 
 \begin{figure}
     \centering
@@ -169,7 +165,7 @@ Fig.~\ref{fig:Afrho} shows some part of the R-band $Af\rho$ profiles, and result
         \resizebox{\linewidth}{!}{
         \begin{tabular}{cccc}
             \toprule
-            Observation Time & \makecell{$Af\rho$ [\si{\cm}] \\ ($\rho =$ \SI{e4}{\km})} & $Af\rho_\mathrm{max}$ [\si{\cm}] & $\rho_\mathrm{max}$ [\si{\km}]\\
+            Observation Time & \makecell{$Af\rho$ [\unit{\cm}] \\ ($\rho =$ \qty{e4}{\km})} & $Af\rho_\mathrm{max}$ [\unit{\cm}] & $\rho_\mathrm{max}$ [\unit{\km}]\\
             \midrule
             \multicolumn{4}{l}{\textbf{C/2019 L3}} \\
             2021-03-28.729 & \num{13611 +- 1874} & \num{13615 +- 1875} & \num{10373} \\
@@ -194,31 +190,20 @@ Fig.~\ref{fig:Afrho} shows some part of the R-band $Af\rho$ profiles, and result
     \end{threeparttable}
 \end{table}
 
-
-
-%平均尘埃生成率的计算如~\autoref{eq:dpr}~所示：
-
-%\begin{equation}
-%    \frac{\mathrm{d}M}{\mathrm{d}t} = \frac{4}{3} \frac{\rho \bar{a} C_e}{\tau_r}
-%    \label{eq:dpr}
-%\end{equation}
-
-%式中，$\rho$是喷射的固体物质的体积密度，$\bar{a}$是颗粒的加权平均半径，$C_e$是测光孔径下的散射截面，$\tau_r$是尘埃在孔径中的停留时间。
-
 \subsection{Coma Colors}
 
 The photometric results in Table~\ref{tab:bvr} also summarises the color index of the two comets. 
-Fig.~\ref{fig:color-r} is the color indices $\mathrm{B}-\mathrm{V}$, $\mathrm{V}-\mathrm{R}$, and $\mathrm{R}-\mathrm{I}$ of C/2019 L3 as a function of heliocentric distance in units of [\unit{\astronomicalunit}], all exhibiting variability during the approach to perihelion. 
-As C/2019 L3 approached perihelion, its $\mathrm{V}-\mathrm{R}$ color index showed a tendency towards blue. 
-Considering its position at a heliocentric distance of about {\SI{4}{\astronomicalunit}}, with a temperature of around {\SI{140}{\K}}, the gas-driven effects are significant. 
+Fig.~\ref{fig:color-r} is the color indices $\mathrm{B-V}$, $\mathrm{V-R}$, and $\mathrm{R-I}$ of C/2019 L3 as a function of heliocentric distance in units of [\unit{\astronomicalunit}], all exhibiting variability during the approach to perihelion. 
+As C/2019 L3 approached perihelion, its $\mathrm{V-R}$ color index showed a tendency towards blue. 
+Considering its position at a heliocentric distance of about {\qty{4}{\astronomicalunit}}, with a temperature of around {\qty{140}{\K}}, the gas-driven effects are significant. 
 The colors for C/2019 L3 are as follows: 
-$\langle \mathrm{B} - \mathrm{V} \rangle = \num{0.75 +- 0.06}$, 
-$\langle \mathrm{V} - \mathrm{R} \rangle = \num{0.27 +- 0.05}$, and 
-$\langle \mathrm{R} - \mathrm{I} \rangle = \num{0.22 +- 0.05}$. 
+$\langle \mathrm{B-V} \rangle = \num{0.75 +- 0.06}$, 
+$\langle \mathrm{V-R} \rangle = \num{0.27 +- 0.05}$, and 
+$\langle \mathrm{R-I} \rangle = \num{0.22 +- 0.05}$. 
 Besides, the colors for C/2020 P3 are 
-$\mathrm{B} - \mathrm{V} = \num{0.95 +- 0.07}$, 
-$\langle \mathrm{V} - \mathrm{R} \rangle = \num{0.29 +- 0.05}$, and 
-$\mathrm{R} - \mathrm{I} = \num{0.21 +- 0.05}$. 
+$\mathrm{B-V} = \num{0.95 +- 0.07}$, 
+$\langle \mathrm{V-R} \rangle = \num{0.29 +- 0.05}$, and 
+$\mathrm{R-I}= = \num{0.21 +- 0.05}$. 
 
 \begin{figure}
     \centering
@@ -226,25 +211,25 @@ $\mathrm{R} - \mathrm{I} = \num{0.21 +- 0.05}$.
     \caption{Color indices vs.\ heliocentric distance plot for comet C/2019 L3.}\label{fig:color-r}
 \end{figure}
 
-Moreover, in order to indicate how the scattered color of the dusty coma varies with wavelengths, the reddening $\mathcal{R}$ (or normalized color) \citep{jewitt_cometary_1986, lara_behaviour_2003, mazzotta_epifani_dust_2011, shi_ccd_2015} is calculated in units of [\si{\percent/\kilo\angstrom}], with the formula given as equation (\ref{eq:red}): 
+Moreover, in order to indicate how the scattered color of the dusty coma varies with wavelengths, the reddening $\mathcal{R}$ (or normalized color) \citep{jewitt_cometary_1986, lara_behaviour_2003, mazzotta_epifani_dust_2011, shi_ccd_2015} is calculated in units of [\unit{\percent/\kilo\angstrom}], with the formula given as equation (\ref{eq:red}): 
 \begin{equation}
 \mathcal{R} = \frac{2}{Af\rho_1 + Af\rho_2} \frac{Af\rho_2 - Af\rho_1}{\lambda_2 - \lambda_1}, 
 \label{eq:red}
 \end{equation}
-where $\lambda_1$ and $\lambda_2$ are the central wavelengths of the filters in units of [\unit{\nm}] (respectively the centers of B and R filters, {\SI{440}{\nm}} and {\SI{658}{\nm}}). With this parameter it is convenient to indicate the percentage of change in the strength of the continuum per {\SI{1000}{\angstrom}}. The results of dust reddening are summarised in Table~\ref{tab:reddening}. In order to avoid the possible effects from background residuals, it is calculated with aperture of {\SI{2e4}{\km}}. 
+where $\lambda_1$ and $\lambda_2$ are the central wavelengths of the filters in units of [\unit{\nm}] (respectively the centers of B and R filters, {\qty{440}{\nm}} and {\qty{658}{\nm}}). With this parameter it is convenient to indicate the percentage of change in the strength of the continuum per {\qty{1000}{\angstrom}}. The results of dust reddening are summarised in Table~\ref{tab:reddening}. In order to avoid the possible effects from background residuals, it is calculated with aperture of {\qty{2e4}{\km}}. 
 
-For comet C/2019 L3, the reddening undergoes significant variations over time, from positive value {\SI{13.75 +- 1.07}{\percent/\kilo\angstrom}} on \DTMdate{2021-3-28} to negative value {\SI{-15.69 +- 0.37}{\percent/\kilo\angstrom}} on \DTMdate{2021-4-12}. We plot the reddening as a function of date in Fig.~\ref{fig:reddening}, and the averaged value {\SI{0.94 +- 0.23}{\percent/\kilo\angstrom}} is marked as a horizontal blue dotted line. For comet C/2020 P3, only on \DTMdate{2021-5-12} is its observational data sufficient for the calcltaion of reddening with a result of {\SI{-6.65 +- 0.01}{\percent/\kilo\angstrom}}. 
+For comet C/2019 L3, the reddening undergoes significant variations over time, from positive value {\qty{13.75 +- 1.07}{\percent/\kilo\angstrom}} on \DTMdate{2021-3-28} to negative value {\qty{-15.69 +- 0.37}{\percent/\kilo\angstrom}} on \DTMdate{2021-4-12}. We plot the reddening as a function of date in Fig.~\ref{fig:reddening}, and the averaged value {\qty{0.94 +- 0.23}{\percent/\kilo\angstrom}} is marked as a horizontal blue dotted line. For comet C/2020 P3, only on \DTMdate{2021-5-12} is its observational data sufficient for the calcltaion of reddening with a result of {\qty{-6.65 +- 0.01}{\percent/\kilo\angstrom}}. 
 
 The reddening of C/2019 L3 on each observation date is shown in Fig.~\ref{fig:reddening}, with the blue dotted line indicating the mean value. The plot reveals that over the observation course of nearly two months, C/2019 L3 exhibited multiple transitions from a reddish to a bluish color, possibly due to variations in the composition of the coma \citep{ivanova_colour_2017}. 
 
 \begin{table}
     \centering
-    \caption{Reddening of comets C/2019 L3 and C/2020 P3 with $\rho = $ \SI{2e4}{\km}. }\label{tab:reddening}
+    \caption{Reddening of comets C/2019 L3 and C/2020 P3 with $\rho = $ \qty{2e4}{\km}. }\label{tab:reddening}
     \begin{threeparttable}
         \resizebox{\linewidth}{!}{
         \begin{tabular}{cccc}
             \toprule
-            Observation Time & B-band $Af\rho$ & R-band $Af\rho$ & reddening [\si{\%/\kilo\angstrom}]\\
+            Observation Time & B-band $Af\rho$ & R-band $Af\rho$ & reddening [\unit{\percent/\kilo\angstrom}]\\
             \midrule
             \multicolumn{4}{l}{\textbf{C/2019 L3}} \\
             2021-03-28.729 & \num{9472 +- 753} & \num{12811 +- 1764} & \num{13.75 +- 1.07}\\
