@@ -32,33 +32,34 @@ The detailed infomation of these telescopes are listed in Table~\ref{tab:telesco
 
 % 两颗彗星观测数据的总览
 \begin{table}
+    \sisetup{range-phrase=\text{--}}
     \centering
     \caption{Log of observations on C/2019 L3 \added{(ATLAS)} and C/2020 P3 \added{(ATLAS)}.}\label{tab:c2019andc2020}
     \begin{threeparttable}
         \resizebox{\linewidth}{!}{
-        \begin{tabular}{ccccccccc}
+        \begin{tabular}{ccccccccccc}
             \toprule
-            Observation Date & r\tnote{1}~[\si{\astronomicalunit}] & $\Delta$\tnote{2}~[\si{\astronomicalunit}] & Ph.A\tnote{3} & Filters\tnote{4} & Size\tnote{5} & \added{Bin} & Scale\tnote{6}~[\si{\km/px}] & Telescope \\
+            Observation Date & r~[\si{\astronomicalunit}]\tnote{1} & $\Delta$~[\si{\astronomicalunit}]\tnote{2} & Ph.A\tnote{3} & Filters\tnote{4} & Size\tnote{5} & \added{Bin} & \added{Seeing [\unit{\arcsecond}]} & \added{SNR} & Scale~[\si{\km/px}]\tnote{6} & Telescope \\
             \midrule
             \multicolumn{8}{l}{\textbf{C/2019 L3}} \\
-            2021-03-28 & \num{4.385} & \num{4.916} & \num{10.4} & B$\times$10, V$\times$10, R$\times$10 & \qtyproduct{1018x1018}{px}, \qtyproduct{9.8x9.8}{\arcminute}   & \numproduct{3x3} & 2075 & ZEISS-1000 \\
-            2021-04-02 & \num{4.360} & \num{4.933} & \num{10.1} & B$\times$4, V$\times$4, R$\times$5    & \qtyproduct{2048x2048}{px}, \qtyproduct{44.4x44.4}{\arcminute} & \numproduct{1x1} & 4654 & Maksutov \\
-            2021-04-03 & \num{4.355} & \num{4.936} & \num{10.1} & B$\times$5, V$\times$5, R$\times$6    & \qtyproduct{2048x2048}{px}, \qtyproduct{44.4x44.4}{\arcminute} & \numproduct{1x1} & 4658 & Maksutov \\
-            2021-04-04 & \num{4.350} & \num{4.939} & \num{10.0} & B$\times$10, V$\times$10, R$\times$10 & \qtyproduct{2048x2048}{px}, \qtyproduct{44.4x44.4}{\arcminute} & \numproduct{1x1} & 4660 & Maksutov \\
-            2021-04-08 & \num{4.331} & \num{4.950} & \num{9.7}  & B$\times$6, V$\times$5, R$\times$5    & \qtyproduct{2048x2048}{px}, \qtyproduct{44.4x44.4}{\arcminute} & \numproduct{1x1} & 4670 & Maksutov \\
-            2021-04-12 & \num{4.311} & \num{4.960} & \num{9.5}  & B$\times$4, V$\times$5, R$\times$3    & \qtyproduct{2048x2048}{px}, \qtyproduct{44.4x44.4}{\arcminute} & \numproduct{1x1} & 4684 & Maksutov \\
-            2021-04-14 & \num{4.301} & \num{4.965} & \num{9.3}  & B$\times$4, V$\times$5, R$\times$5    & \qtyproduct{2048x2048}{px}, \qtyproduct{44.4x44.4}{\arcminute} & \numproduct{1x1} & 4686 & Maksutov \\
-            2021-04-15 & \num{4.296} & \num{4.967} & \num{9.3}  & B$\times$4, V$\times$4, R$\times$4    & \qtyproduct{2048x2048}{px}, \qtyproduct{44.4x44.4}{\arcminute} & \numproduct{1x1} & 4687 & Maksutov \\
-            2021-05-04 & \num{4.205} & \num{4.987} & \num{8.0}  & B$\times$10, V$\times$10, R$\times$10, I$\times$10 & \qtyproduct{1365x1365}{px}, \qtyproduct{10.0x10.0}{\arcminute} & \numproduct{3x3} & 1587 & ZEISS-1000 \\
-            2021-05-10 & \num{4.177} & \num{4.985} & \num{7.6}  & B$\times$3, V$\times$3, R$\times$3, I$\times$3     & \qtyproduct{2048x2048}{px}, \qtyproduct{44.4x44.4}{\arcminute} & \numproduct{1x1} & 4709 & Maksutov \\
-            2021-05-12 & \num{4.168} & \num{4.984} & \num{7.5}  & B$\times$5, V$\times$5, R$\times$5, I$\times$5     & \qtyproduct{2048x2048}{px}, \qtyproduct{44.4x44.4}{\arcminute} & \numproduct{1x1} & 4706 & Maksutov \\
-            2021-05-14 & \num{4.159} & \num{4.982} & \num{7.4}  & \makecell[c]{B$\times$11, V$\times$11, R$\times$12, I$\times$11 \\ B$\times$7, V$\times$7, R$\times$7, I$\times$7} & \makecell[c]{\qtyproduct{1024x1024}{px}, \qtyproduct{9.6x9.6}{\arcminute} \\ \qtyproduct{2048x2048}{px}, \qtyproduct{44.4x44.4}{\arcminute}} & \makecell[c]{\numproduct{1x1} \\ \numproduct{1x1}} & \makecell[c]{2015 \\ 4706} & \makecell[c]{ZTSh \\ Maksutov} \\
+            2021-03-28 & \num{4.385} & \num{4.916} & \num{10.4} & B$\times$10, V$\times$10, R$\times$10 & \qtyproduct{1018x1018}{px}, \qtyproduct{9.8x9.8}{\arcminute}   & \numproduct{3x3} & 1.7 & \numrange{1.5}{4.3} & 2075 & ZEISS-1000 \\
+            2021-04-02 & \num{4.360} & \num{4.933} & \num{10.1} & B$\times$4, V$\times$4, R$\times$5    & \qtyproduct{2048x2048}{px}, \qtyproduct{44.4x44.4}{\arcminute} & \numproduct{1x1} & 5.2 & \numrange{4.1}{5.0} & 4654 & Maksutov \\
+            2021-04-03 & \num{4.355} & \num{4.936} & \num{10.1} & B$\times$5, V$\times$5, R$\times$6    & \qtyproduct{2048x2048}{px}, \qtyproduct{44.4x44.4}{\arcminute} & \numproduct{1x1} & 5.2 & \numrange{2.3}{5.7} & 4658 & Maksutov \\
+            2021-04-04 & \num{4.350} & \num{4.939} & \num{10.0} & B$\times$10, V$\times$10, R$\times$10 & \qtyproduct{2048x2048}{px}, \qtyproduct{44.4x44.4}{\arcminute} & \numproduct{1x1} & 5.2 & \numrange{4.1}{5.2} & 4660 & Maksutov \\
+            2021-04-08 & \num{4.331} & \num{4.950} & \num{9.7}  & B$\times$6, V$\times$5, R$\times$5    & \qtyproduct{2048x2048}{px}, \qtyproduct{44.4x44.4}{\arcminute} & \numproduct{1x1} & 5.2 & \numrange{1.8}{5.4} & 4670 & Maksutov \\
+            2021-04-12 & \num{4.311} & \num{4.960} & \num{9.5}  & B$\times$4, V$\times$5, R$\times$3    & \qtyproduct{2048x2048}{px}, \qtyproduct{44.4x44.4}{\arcminute} & \numproduct{1x1} & 7.8 & \numrange{3.6}{8.8} & 4684 & Maksutov \\
+            2021-04-14 & \num{4.301} & \num{4.965} & \num{9.3}  & B$\times$4, V$\times$5, R$\times$5    & \qtyproduct{2048x2048}{px}, \qtyproduct{44.4x44.4}{\arcminute} & \numproduct{1x1} & 7.8 & \numrange{5.1}{6.5} & 4686 & Maksutov \\
+            2021-04-15 & \num{4.296} & \num{4.967} & \num{9.3}  & B$\times$4, V$\times$4, R$\times$4    & \qtyproduct{2048x2048}{px}, \qtyproduct{44.4x44.4}{\arcminute} & \numproduct{1x1} & 6.5 & \numrange{3.1}{4.9} & 4687 & Maksutov \\
+            2021-05-04 & \num{4.205} & \num{4.987} & \num{8.0}  & B$\times$10, V$\times$10, R$\times$10, I$\times$10 & \qtyproduct{1365x1365}{px}, \qtyproduct{10.0x10.0}{\arcminute} & \numproduct{3x3} & 5.7 & \numrange{3.5}{14.3} & 1587 & ZEISS-1000 \\
+            2021-05-10 & \num{4.177} & \num{4.985} & \num{7.6}  & B$\times$3, V$\times$3, R$\times$3, I$\times$3     & \qtyproduct{2048x2048}{px}, \qtyproduct{44.4x44.4}{\arcminute} & \numproduct{1x1} & 7.8 & \numrange{2.8}{5.0} & 4709 & Maksutov \\
+            2021-05-12 & \num{4.168} & \num{4.984} & \num{7.5}  & B$\times$5, V$\times$5, R$\times$5, I$\times$5     & \qtyproduct{2048x2048}{px}, \qtyproduct{44.4x44.4}{\arcminute} & \numproduct{1x1} & 5.2 & \numrange{1.6}{2.7} & 4706 & Maksutov \\
+            2021-05-14 & \num{4.159} & \num{4.982} & \num{7.4}  & \makecell[c]{B$\times$11, V$\times$11, R$\times$12, I$\times$11 \\ B$\times$7, V$\times$7, R$\times$7, I$\times$7} & \makecell[c]{\qtyproduct{1024x1024}{px}, \qtyproduct{9.6x9.6}{\arcminute} \\ \qtyproduct{2048x2048}{px}, \qtyproduct{44.4x44.4}{\arcminute}} & \makecell[c]{\numproduct{1x1} \\ \numproduct{1x1}} & \makecell[c]{3.9 \\ 6.5} & \makecell[c]{\numrange{2.2}{6.2} \\ \numrange{2.7}{6.1}} & \makecell[c]{2015 \\ 4706} & \makecell[c]{ZTSh \\ Maksutov} \\
 
             \multicolumn{8}{l}{\textbf{C/2020 P3}} \\
-            2021-03-28\tnote{7} & \num{6.956} & \num{6.814} & \num{8.2} & B$\times$7, V$\times$7, R$\times$7 & \qtyproduct{1018x1018}{px}, \qtyproduct{9.8x9.8}{\arcminute} & \numproduct{3x3} & 2937 & ZEISS-1000 \\
-            2021-04-02 & \num{6.990} & \num{6.813} & \num{8.2} & V$\times$11, R$\times$14 & \qtyproduct{2048x2048}{px}, \qtyproduct{44.4x44.4}{\arcminute} & \numproduct{1x1} & 6592 & Maksutov \\
-            2021-05-11 & \num{7.216} & \num{6.814} & \num{7.6} & C$\times$4, V$\times$5, R$\times$5 & \qtyproduct{2048x2048}{px}, \qtyproduct{44.4x44.4}{\arcminute} & \numproduct{1x1} & 6807 & Maksutov \\
-            2021-05-12 & \num{7.221} & \num{6.814} & \num{7.6} & \makecell[c]{B$\times$3, V$\times$3, R$\times$3, I$\times$3 \\ B$\times$6, V$\times$5, R$\times$5, I$\times$5} & \makecell[c]{\qtyproduct{1024x1024}{px}, \qtyproduct{9.6x9.6}{\arcminute} \\ \qtyproduct{2048x2048}{px}, \qtyproduct{44.4x44.4}{\arcminute}}  & \makecell[c]{\numproduct{1x1} \\ \numproduct{1x1}} &\makecell[c]{2914 \\ 6807} & \makecell[c]{ZTSh \\ Maksutov} \\
+            2021-03-28\tnote{7} & \num{6.956} & \num{6.814} & \num{8.2} & B$\times$7, V$\times$7, R$\times$7 & \qtyproduct{1018x1018}{px}, \qtyproduct{9.8x9.8}{\arcminute} & \numproduct{3x3} & 1.2 & \numrange{1.0}{2.6} & 2937 & ZEISS-1000 \\
+            2021-04-02 & \num{6.990} & \num{6.813} & \num{8.2} & V$\times$11, R$\times$14 & \qtyproduct{2048x2048}{px}, \qtyproduct{44.4x44.4}{\arcminute} & \numproduct{1x1} & 5.2 & \numrange{2.1}{4.3} & 6592 & Maksutov \\
+            2021-05-11 & \num{7.216} & \num{6.814} & \num{7.6} & C$\times$4, V$\times$5, R$\times$5 & \qtyproduct{2048x2048}{px}, \qtyproduct{44.4x44.4}{\arcminute} & \numproduct{1x1} & 3.9 & \numrange{2.6}{2.8} & 6807 & Maksutov \\
+            2021-05-12 & \num{7.221} & \num{6.814} & \num{7.6} & \makecell[c]{B$\times$3, V$\times$3, R$\times$3, I$\times$3 \\ B$\times$6, V$\times$5, R$\times$5, I$\times$5} & \makecell[c]{\qtyproduct{1024x1024}{px}, \qtyproduct{9.6x9.6}{\arcminute} \\ \qtyproduct{2048x2048}{px}, \qtyproduct{44.4x44.4}{\arcminute}}  & \makecell[c]{\numproduct{1x1} \\ \numproduct{1x1}} & \makecell[c]{2.2 \\ 3.9} & \makecell[c]{\numrange{3.2}{8.1} \\ \numrange{1.7}{3.7}} & \makecell[c]{2914 \\ 6807} & \makecell[c]{ZTSh \\ Maksutov} \\
             \bottomrule
         \end{tabular}
         }
@@ -82,8 +83,7 @@ All of the images had been corrected with common methods for dark subtraction, b
 The photometric calibration of these two comets' data was performed with the UCAC4 \citep{zacharias_fourth_2013} and UCAC5 \citep{zacharias_ucac5_2017}. Additionally, the GCVS 5.1 \citep{samus_general_2017} was applied to inspect the variability of all the comparison stars. 
 
 In order to measure the  instrunment magnitudes of comets and comparison stars, circular aperture photometry was applied. When conducting aperture photometry on stars, the sky background value is determined by the annular region around the star. In contrast, when conducting aperture photometry on comets, the sky background value is determined by several clean background areas far away from the comet. The photometric aperture of comparison stars was determined by nearly \num{2} times the full-wide at half-maximum (FWHM). Since three different telescopes were involved during the observation, the photometry of comets was performed on different apertures centered on the comet photocenter, with all of them ensured to be up to \num{1.5} times the full-wide at half-maximum and close to each other in units of arcsecond as much as possible. 
-The ranges of seeings for the three telescopes are as follows: \ang{;;1.2} to \ang{;;7.5} for ZEISS-1000, \ang{;;3.9} to \ang{;;7.8} for Maksutov, and \ang{;;2.4} to \ang{;;3.9} for ZTSh. 
-The photometric results are listed as Table~\ref{tab:bvr}, and the error of photometry $e_{\mathrm{phot}}$ is derived from equation (\ref{eq:err}) as follows: 
+The ranges of seeings for the three telescopes are as follows: \ang{;;1.2} to \ang{;;7.5} for ZEISS-1000, \ang{;;3.9} to \ang{;;7.8} for Maksutov, and \ang{;;2.4} to \ang{;;3.9} for ZTSh. The photometric results are listed as Table~\ref{tab:bvr}, and the error of photometry $e_{\mathrm{phot}}$ is derived from equation (\ref{eq:err}) as follows: 
 \begin{equation}
     e_{\mathrm{phot}} = \sqrt{e_{\mathrm{c}}^{2} + \sigma_\mathrm{s}^2}, 
     \label{eq:err}
