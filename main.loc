@@ -12,6 +12,7 @@
 \contentsline {added}{Added: \truncate {\Changestruncatewidth }{Seeing [\unit {\arcsecond }]}}{2}{section*.28}%
 \contentsline {added}{Added: \truncate {\Changestruncatewidth }{SNR}}{2}{section*.29}%
 \contentsline {replaced}{Replaced: \truncate {\Changestruncatewidth }{observed before and after its perihelion }}{2}{section*.18}%
+<<<<<<< HEAD
 \contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{3}{section*.49}%
 \contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{3}{section*.50}%
 \contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{4}{section*.32}%
@@ -33,3 +34,25 @@
 \contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{6}{section*.80}%
 \contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{7}{section*.84}%
 \contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{7}{section*.88}%
+=======
+\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{3}{section*.32}%
+\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{3}{section*.34}%
+\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{3}{section*.37}%
+\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{3}{section*.38}%
+\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{4}{section*.42}%
+\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{4}{section*.43}%
+\contentsline {added}{Added: \truncate {\Changestruncatewidth }{\unit {\km }}}{4}{section*.45}%
+\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{4}{section*.48}%
+\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{4}{section*.51}%
+\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{5}{section*.54}%
+\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{5}{section*.56}%
+\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{5}{section*.59}%
+\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{5}{section*.60}%
+\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{5}{section*.64}%
+\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{5}{section*.65}%
+\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{5}{section*.69}%
+\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{6}{section*.73}%
+\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{6}{section*.74}%
+\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{6}{section*.78}%
+\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{6}{section*.82}%
+>>>>>>> 2adc61aebe5d17559c60255140ea4262e9167853
