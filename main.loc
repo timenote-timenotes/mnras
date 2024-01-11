@@ -1,4 +1,4 @@
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(e.g., \mbox {\citealt {meech_activity_2009}})}}{1}{section*.1}%
+\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(e.g., \mbox {\citealt {mazzotta_epifani_distant_2009, mazzotta_epifani_activity_2010}}; \mbox {\citealt {meech_activity_2009}}; \mbox {\citealt {ivanova_quasi-simultaneous_2023}})}}{1}{section*.1}%
 \contentsline {replaced}{Replaced: \truncate {\Changestruncatewidth }{namely C/2019 L3 (ATLAS) (hereafter C/2019 L3) and C/2020 P3 (ATLAS) (hereafter C/2020 P3)}}{1}{section*.2}%
 \contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{2}{section*.8}%
 \contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{2}{section*.9}%
@@ -23,20 +23,21 @@
 \contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{4}{section*.46}%
 \contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{4}{section*.50}%
 \contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{4}{section*.53}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{5}{section*.56}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{5}{section*.58}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{5}{section*.61}%
+\contentsline {replaced}{Replaced: \truncate {\Changestruncatewidth }{and the $A(0)f\rho $ values calculated in the reference aperture of \mbox {\qty {10000}{\km }} are summarised in Table\nobreakspace {}\ref {tab:afrho} }}{4}{section*.54}%
+\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{5}{section*.57}%
+\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{5}{section*.59}%
 \contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{5}{section*.62}%
-\contentsline {comment}{Commented: \truncate {\Changestruncatewidth }{no changes to $\mathrm {B-V}$}}{5}{section*.69}%
-\contentsline {replaced}{Replaced: \truncate {\Changestruncatewidth }{\num {0.28 +- 0.05}}}{5}{section*.70}%
-\contentsline {replaced}{Replaced: \truncate {\Changestruncatewidth }{\num {0.21 +- 0.05}}}{5}{section*.71}%
-\contentsline {replaced}{Replaced: \truncate {\Changestruncatewidth }{\num {1.04 +- 0.09}}}{5}{section*.72}%
-\contentsline {replaced}{Replaced: \truncate {\Changestruncatewidth }{\num {0.26 +- 0.05}}}{5}{section*.73}%
-\contentsline {replaced}{Replaced: \truncate {\Changestruncatewidth }{\num {0.76 +- 0.04}}}{5}{section*.74}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{5}{section*.66}%
+\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{5}{section*.63}%
 \contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{5}{section*.67}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{5}{section*.77}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{6}{section*.81}%
+\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{5}{section*.68}%
+\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{5}{section*.78}%
+\contentsline {comment}{Commented: \truncate {\Changestruncatewidth }{no changes to $\mathrm {B-V}$}}{5}{section*.70}%
+\contentsline {replaced}{Replaced: \truncate {\Changestruncatewidth }{\num {0.28 +- 0.05}}}{5}{section*.71}%
+\contentsline {replaced}{Replaced: \truncate {\Changestruncatewidth }{\num {0.21 +- 0.05}}}{5}{section*.72}%
+\contentsline {replaced}{Replaced: \truncate {\Changestruncatewidth }{\num {1.04 +- 0.09}}}{5}{section*.73}%
+\contentsline {replaced}{Replaced: \truncate {\Changestruncatewidth }{\num {0.26 +- 0.05}}}{5}{section*.74}%
+\contentsline {replaced}{Replaced: \truncate {\Changestruncatewidth }{\num {0.76 +- 0.04}}}{5}{section*.75}%
 \contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{6}{section*.82}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{6}{section*.86}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{6}{section*.90}%
+\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{6}{section*.83}%
+\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{6}{section*.87}%
+\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{6}{section*.91}%

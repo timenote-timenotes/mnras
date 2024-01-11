@@ -147,7 +147,7 @@ Due to the phase darkening effect, it is necessary to adjust $Af\rho$ values at 
 \end{equation}
 where $\alpha$ is the phase angle, and $\phi$ is the phase function. A composite phase function (see \citealt{schleicher_composition_2011, marcus_forward-scattering_2007}) suggested by D. Schleicher\footnote{\url{https://asteroid.lowell.edu/comet/dustphase.html}} is suitable for adjustion in this work. The related tabular data (\verb|dustphaseHM_table.txt|\footnote{\url{https://asteroid.lowell.edu/comet/dustphaseHM_table.html}}) provides the phase function with phase angle in the $\ang{0} \leqslant \alpha \leqslant \ang{180}$ range, and we adopt cubic spline interpolation method on it to obtain unlisted values. 
 
-Fig.~\ref{fig:Afrho} shows some part of the R-band $Af\rho$ profiles, and results for the maximum of $Af\rho$ as well as the corresponding aperture on each date are summarised in Table~\ref{tab:afrho}. When a comet possesses steady coma, its $Af\rho$ will be independent of aperture. In this paper, as is shown in Fig.~\ref{fig:Afrho}, that is not the case for comet C/2019 L3 or C/2020 P3, both of which reveal a steep increse in $Af\rho$ with the aperture $\rho$ near the comet center along with a smooth decrese with larger aperture. The increase results from usually the effect of seeing and observational circumstance, while the nonsteady dust emmission and possibly the fading or destruction of dust grain bring the decrease \citep{lara_behaviour_2003,tozzi_imaging_2003}.  
+Fig.~\ref{fig:Afrho} shows some part of the R-band $A(0)f\rho$ profiles, \replaced{and the $A(0)f\rho$ values calculated in the reference aperture of \mbox{\qty{10000}{\km}} are summarised in Table~\ref{tab:afrho} }{and results for the maximum of $Af\rho$ as well as the corresponding aperture on each date are summarised in Table~\ref{tab:afrho}}. When a comet possesses steady coma, its $Af\rho$ will be independent of aperture. In this paper, as is shown in Fig.~\ref{fig:Afrho}, that is not the case for comet C/2019 L3 or C/2020 P3, both of which reveal a steep increse in $Af\rho$ with the aperture $\rho$ near the comet center along with a smooth decrese with larger aperture. The increase results from usually the effect of seeing and observational circumstance, while the nonsteady dust emmission and possibly the fading or destruction of dust grain bring the decrease \citep{lara_behaviour_2003,tozzi_imaging_2003}.  
 
 \begin{figure}
     \centering
@@ -170,38 +170,68 @@ Fig.~\ref{fig:Afrho} shows some part of the R-band $Af\rho$ profiles, and result
 
 % 统一至20000km？
 % Afrho
+% \begin{table}
+%     \centering
+%     \caption{$Af\rho$ values for comets C/2019 L3 \added{(ATLAS)} and C/2020 P3 \added{(ATLAS)}. }\label{tab:afrho}
+%     \begin{threeparttable}
+%         \resizebox{\linewidth}{!}{
+%         \begin{tabular}{cccc}
+%             \toprule
+%             Observation Time & \makecell{$Af\rho$ [\unit{\cm}] \\ ($\rho =$ \qty{e4}{\km})} & $Af\rho_\mathrm{max}$ [\unit{\cm}] & $\rho_\mathrm{max}$ [\unit{\km}]\\
+%             \midrule
+%             \multicolumn{4}{l}{\textbf{C/2019 L3}} \\
+%             2021-03-28.729 & \num{13611 +- 1874} & \num{13615 +- 1875} & \num{10373} \\
+%             2021-04-02.739 & \num{9332 +- 539} & \num{10748 +- 618} & \num{20930} \\
+%             2021-04-03.719 & \num{7959 +- 143} & \num{10869 +- 729} & \num{22093} \\
+%             2021-04-04.691 & \num{6220 +- 69} & \num{9003 +- 114} & \num{20930} \\
+%             2021-04-08.691 & \num{8985 +- 603} & \num{8700 +- 110} & \num{19860} \\
+%             2021-04-12.724 & \num{7911 +- 102} & \num{7410 +- 269} & \num{29343} \\
+%             2021-04-14.702 & \num{7320 +- 95} & \num{8268 +- 133} & \num{25822} \\
+%             2021-04-15.714 & \num{5043 +- 244} & \num{8891 +- 154} & \num{19953} \\
+%             2021-05-04.736 & \num{5943 +- 96} & \num{8320 +- 340} & \num{29365} \\
+%             2021-05-10.735 & \num{7523 +- 134} & \num{8787 +- 205} & \num{29343} \\
+%             2021-05-12.724 & \num{5701 +- 236} & \num{9590 +- 157} & \num{21127} \\
+%             2021-05-14.721 & \num{6356 +- 152} & \num{9164 +- 95} & \num{29343} \\
+%             \multicolumn{4}{l}{\textbf{C/2020 P3}} \\
+%             2021-04-02.775 & \num{869 +- 20} & \num{948 +- 19} & \num{15789} \\
+%             2021-05-11.744 & \num{708 +- 17} & \num{848 +- 17} & \num{19048} \\
+%             2021-05-12.749 & \num{606 +- 31} & \num{801 +- 38} & \num{19048} \\
+%             \bottomrule
+%         \end{tabular}
+%         }
+%     \end{threeparttable}
+% \end{table}
 \begin{table}
     \centering
-    \caption{$Af\rho$ values for comets C/2019 L3 \added{(ATLAS)} and C/2020 P3 \added{(ATLAS)}. }\label{tab:afrho}
+    \caption{$A(0)f\rho$ values for comets C/2019 L3 \added{(ATLAS)} and C/2020 P3 \added{(ATLAS)}. }\label{tab:afrho}
     \begin{threeparttable}
-        \resizebox{\linewidth}{!}{
-        \begin{tabular}{cccc}
+        % \resizebox{\linewidth}{!}{
+        \begin{tabular}{cc}
             \toprule
-            Observation Time & \makecell{$Af\rho$ [\unit{\cm}] \\ ($\rho =$ \qty{e4}{\km})} & $Af\rho_\mathrm{max}$ [\unit{\cm}] & $\rho_\mathrm{max}$ [\unit{\km}]\\
+            Observation Time & $A(0)f\rho$ [\unit{\cm}] ($\rho =$ \qty{10000}{\km}) \\
             \midrule
-            \multicolumn{4}{l}{\textbf{C/2019 L3}} \\
-            2021-03-28.729 & \num{13611 +- 1874} & \num{13615 +- 1875} & \num{10373} \\
-            2021-04-02.739 & \num{9332 +- 539} & \num{10748 +- 618} & \num{20930} \\
-            2021-04-03.719 & \num{7959 +- 143} & \num{10869 +- 729} & \num{22093} \\
-            2021-04-04.691 & \num{6220 +- 69} & \num{9003 +- 114} & \num{20930} \\
-            2021-04-08.691 & \num{8985 +- 603} & \num{8700 +- 110} & \num{19860} \\
-            2021-04-12.724 & \num{7911 +- 102} & \num{7410 +- 269} & \num{29343} \\
-            2021-04-14.702 & \num{7320 +- 95} & \num{8268 +- 133} & \num{25822} \\
-            2021-04-15.714 & \num{5043 +- 244} & \num{8891 +- 154} & \num{19953} \\
-            2021-05-04.736 & \num{5943 +- 96} & \num{8320 +- 340} & \num{29365} \\
-            2021-05-10.735 & \num{7523 +- 134} & \num{8787 +- 205} & \num{29343} \\
-            2021-05-12.724 & \num{5701 +- 236} & \num{9590 +- 157} & \num{21127} \\
-            2021-05-14.721 & \num{6356 +- 152} & \num{9164 +- 95} & \num{29343} \\
-            \multicolumn{4}{l}{\textbf{C/2020 P3}} \\
-            2021-04-02.775 & \num{869 +- 20} & \num{948 +- 19} & \num{15789} \\
-            2021-05-11.744 & \num{708 +- 17} & \num{848 +- 17} & \num{19048} \\
-            2021-05-12.749 & \num{606 +- 31} & \num{801 +- 38} & \num{19048} \\
+            \multicolumn{2}{l}{\textbf{C/2019 L3}} \\
+            2021-03-28.729 & \num{13611 +- 1874} \\
+            2021-04-02.739 & \num{9332 +- 539} \\
+            2021-04-03.719 & \num{7959 +- 143} \\
+            2021-04-04.691 & \num{6220 +- 69} \\
+            2021-04-08.691 & \num{8985 +- 603} \\
+            2021-04-12.724 & \num{7911 +- 102} \\
+            2021-04-14.702 & \num{7320 +- 95} \\
+            2021-04-15.714 & \num{5043 +- 244} \\
+            2021-05-04.736 & \num{5943 +- 96} \\
+            2021-05-10.735 & \num{7523 +- 134} \\
+            2021-05-12.724 & \num{5701 +- 236} \\
+            2021-05-14.721 & \num{6356 +- 152} \\
+            \multicolumn{2}{l}{\textbf{C/2020 P3}} \\
+            2021-04-02.775 & \num{869 +- 20} \\
+            2021-05-11.744 & \num{708 +- 17} \\
+            2021-05-12.749 & \num{606 +- 31} \\
             \bottomrule
         \end{tabular}
-        }
+        % }
     \end{threeparttable}
 \end{table}
-
 \subsection{Coma Colors}
 
 The photometric results in Table~\ref{tab:bvr} also summarises the color index of the two comets. 
