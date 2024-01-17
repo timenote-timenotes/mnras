@@ -1,49 +1,51 @@
 \contentsline {added}{Added: \truncate {\Changestruncatewidth }{(e.g., \mbox {\citealt {mazzotta_epifani_distant_2009, mazzotta_epifani_activity_2010}}; \mbox {\citealt {meech_activity_2009}}; \mbox {\citealt {ivanova_quasi-simultaneous_2023}})}}{1}{section*.1}%
-\contentsline {replaced}{Replaced: \truncate {\Changestruncatewidth }{namely C/2019 L3 (ATLAS) (hereafter C/2019 L3) and C/2020 P3 (ATLAS) (hereafter C/2020 P3)}}{1}{section*.2}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{2}{section*.8}%
+\contentsline {replaced}{Replaced: \truncate {\Changestruncatewidth }{in which case }}{1}{section*.2}%
+\contentsline {replaced}{Replaced: \truncate {\Changestruncatewidth }{namely C/2019 L3 (ATLAS) (hereafter C/2019 L3) and C/2020 P3 (ATLAS) (hereafter C/2020 P3)}}{1}{section*.3}%
 \contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{2}{section*.9}%
 \contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{2}{section*.10}%
 \contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{2}{section*.11}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{2}{section*.15}%
+\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{2}{section*.12}%
 \contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{2}{section*.16}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{2}{section*.24}%
+\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{2}{section*.17}%
 \contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{2}{section*.25}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{Bin}}{2}{section*.27}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{Seeing [\unit {\arcsecond }]}}{2}{section*.28}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{SNR}}{2}{section*.29}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{the range for signal-to-noise ratios of images in all filters}}{2}{section*.30}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{captured}}{2}{section*.31}%
-\contentsline {replaced}{Replaced: \truncate {\Changestruncatewidth }{dim for practical use}}{2}{section*.32}%
-\contentsline {replaced}{Replaced: \truncate {\Changestruncatewidth }{observed before and after its perihelion }}{2}{section*.18}%
-\contentsline {replaced}{Replaced: \truncate {\Changestruncatewidth }{The photometry of comets was uniformly conducted using an aperture of \mbox {\qty {40000}{\km }}, ensuring that this aperture is up to \num {1.5} times the full-wide at half-maximum. Moreover, the neighbour stars are situated outside the photometric regions of comets, rendering them inconsequential to the photometry of comets, despite the imperfect PSF subtraction. }}{3}{section*.33}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{3}{section*.36}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{3}{section*.38}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{3}{section*.41}%
+\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{2}{section*.26}%
+\contentsline {added}{Added: \truncate {\Changestruncatewidth }{Bin}}{2}{section*.28}%
+\contentsline {added}{Added: \truncate {\Changestruncatewidth }{Seeing [\unit {\arcsecond }]}}{2}{section*.29}%
+\contentsline {added}{Added: \truncate {\Changestruncatewidth }{SNR}}{2}{section*.30}%
+\contentsline {added}{Added: \truncate {\Changestruncatewidth }{the range for signal-to-noise ratios of images in all filters}}{2}{section*.31}%
+\contentsline {added}{Added: \truncate {\Changestruncatewidth }{captured}}{2}{section*.32}%
+\contentsline {replaced}{Replaced: \truncate {\Changestruncatewidth }{dim for practical use}}{2}{section*.33}%
+\contentsline {replaced}{Replaced: \truncate {\Changestruncatewidth }{observed before and after its perihelion }}{2}{section*.19}%
+\contentsline {replaced}{Replaced: \truncate {\Changestruncatewidth }{The photometry of comets was uniformly conducted using an aperture of \mbox {\qty {40000}{\km }}, ensuring that this aperture is up to \num {1.5} times the full-wide at half-maximum. Moreover, the neighbour stars are situated outside the photometric regions of comets, rendering them inconsequential to the photometry of comets, despite the imperfect PSF subtraction. }}{3}{section*.34}%
+\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS), field of view: \mbox {\qtyproduct {2x2}{\arcminute }}}}{3}{section*.37}%
+\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{3}{section*.39}%
 \contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{3}{section*.42}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{4}{section*.47}%
+\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{3}{section*.43}%
 \contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{4}{section*.48}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{with apertures consistently set to \mbox {\qty {40000}{\km }}}}{4}{section*.49}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{4}{section*.53}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{4}{section*.56}%
-\contentsline {replaced}{Replaced: \truncate {\Changestruncatewidth }{and the $A(0)f\rho $ values calculated in the reference aperture of \mbox {\qty {10000}{\km }} are summarised in Table\nobreakspace {}\ref {tab:afrho} }}{4}{section*.57}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{5}{section*.60}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{5}{section*.62}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{5}{section*.65}%
+\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{4}{section*.49}%
+\contentsline {added}{Added: \truncate {\Changestruncatewidth }{with apertures consistently set to \mbox {\qty {40000}{\km }}}}{4}{section*.50}%
+\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{4}{section*.54}%
+\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{4}{section*.57}%
+\contentsline {replaced}{Replaced: \truncate {\Changestruncatewidth }{and the $A(0)f\rho $ values calculated in the reference aperture of \mbox {\qty {10000}{\km }} are summarised in Table\nobreakspace {}\ref {tab:afrho} }}{4}{section*.58}%
+\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{5}{section*.61}%
+\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{5}{section*.63}%
 \contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{5}{section*.66}%
-\contentsline {comment}{Commented: \truncate {\Changestruncatewidth }{no changes to $\mathrm {B-V}$}}{5}{section*.73}%
-\contentsline {replaced}{Replaced: \truncate {\Changestruncatewidth }{\num {0.28 +- 0.05}}}{5}{section*.74}%
-\contentsline {replaced}{Replaced: \truncate {\Changestruncatewidth }{\num {0.21 +- 0.05}}}{5}{section*.75}%
-\contentsline {replaced}{Replaced: \truncate {\Changestruncatewidth }{\num {1.04 +- 0.09}}}{5}{section*.76}%
-\contentsline {replaced}{Replaced: \truncate {\Changestruncatewidth }{\num {0.26 +- 0.05}}}{5}{section*.77}%
-\contentsline {replaced}{Replaced: \truncate {\Changestruncatewidth }{\num {0.76 +- 0.04}}}{5}{section*.78}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{5}{section*.70}%
+\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{5}{section*.67}%
+\contentsline {comment}{Commented: \truncate {\Changestruncatewidth }{no changes to $\mathrm {B-V}$}}{5}{section*.74}%
+\contentsline {replaced}{Replaced: \truncate {\Changestruncatewidth }{\num {0.28 +- 0.05}}}{5}{section*.75}%
+\contentsline {replaced}{Replaced: \truncate {\Changestruncatewidth }{\num {0.21 +- 0.05}}}{5}{section*.76}%
 \contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{5}{section*.71}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{5}{section*.81}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{6}{section*.85}%
+\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{5}{section*.72}%
+\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{5}{section*.82}%
+\contentsline {replaced}{Replaced: \truncate {\Changestruncatewidth }{\num {1.04 +- 0.09}}}{5}{section*.77}%
+\contentsline {replaced}{Replaced: \truncate {\Changestruncatewidth }{\num {0.26 +- 0.05}}}{5}{section*.78}%
+\contentsline {replaced}{Replaced: \truncate {\Changestruncatewidth }{\num {0.76 +- 0.04}}}{5}{section*.79}%
 \contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{6}{section*.86}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{6}{section*.90}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{$Af\rho $}}{6}{section*.91}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{6}{section*.95}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{Colors}}{6}{section*.96}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{Color-aperture Dependency}}{7}{section*.98}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{Summary}}{7}{section*.99}%
+\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{6}{section*.87}%
+\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{6}{section*.91}%
+\contentsline {added}{Added: \truncate {\Changestruncatewidth }{$Af\rho $}}{6}{section*.92}%
+\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{6}{section*.96}%
+\contentsline {added}{Added: \truncate {\Changestruncatewidth }{Colors}}{7}{section*.97}%
+\contentsline {added}{Added: \truncate {\Changestruncatewidth }{Color-aperture Dependence}}{7}{section*.99}%
+\contentsline {comment}{Commented: \truncate {\Changestruncatewidth }{This part is newly added}}{7}{section*.100}%
+\contentsline {added}{Added: \truncate {\Changestruncatewidth }{Summary}}{7}{section*.104}%
