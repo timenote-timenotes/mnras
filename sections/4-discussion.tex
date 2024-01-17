@@ -1,6 +1,5 @@
 \section{Discussion and Conclusion}\label{sec:dis}
 
-\subsection{\added{$Af\rho$}}
 % From \autoref{tab:afrho} we can conclude that the comet C/2019 L3 is very active due to its high $A(0)f\rho$ values during the observational run, while C/2020 P3 is less active since its $A(0)f\rho$ values are only about {\SI{10}{\percent}} of that of C/2019 L3. 
 Comparing $A(0)f\rho$ values with that of other LPCs, just as Fig.~\ref{fig:afrho-ref} shown, C/2019 L3 is very active at heliocentric distance of $\thicksim${\qty{4}{\astronomicalunit}}, and C/2020 P3 is moderately active at heliocentric distance of $\thicksim${\qty{7}{\astronomicalunit}}. 
 Moreover, % 在此只写活动性显现出异常, 不作过度猜测
@@ -21,7 +20,6 @@ On the other hand, from the Astronomer's Telegram\footnote{\url{https://www.astr
     \caption{R-band $A(0)f\rho$ values of C/2019 L3 \added{(ATLAS)} as a function of heliocentric distance. }\label{fig:a0frho-c2019}
 \end{figure}
 
-\subsection{\added{Colors}}
 According to the study by \cite{ramirez_ubvric_2012}, the solar colors are as follows: 
 ${(\mathrm{B-V})}_{\odot} = \num{0.653 +- 0.005}$, 
 ${(\mathrm{V-R})}_{\odot} = \num{0.352 +- 0.007}$, and 
@@ -54,13 +52,9 @@ In general, the color indices of the two LPCs studied in this work differ from t
     \caption{Color indices $\langle \mathrm{B-V} \rangle$ vs. $\langle \mathrm{V-R} \rangle$ plot of Long-period comets}.\label{fig:color-color}
 \end{figure}
 
-\subsection{\added{Color-aperture Dependence}}
 \comment{This part is newly added}
-Cometary colors may vary with photometric aperture, and numerous studies have explored this dependence (e.g., \citealt{betzler_analysis_2017, kolokolova_color_2003}). In order to maximize the color differences with apertures, the $\mathrm{B-R}$ color is well-suited for analysis \citep{jewittCOLORSYSTEMATICSCOMETS2015}. For this purpose, the $\mathrm{B-R}$ color of the two comets is additionally measured with variable apertures, and some of the results are shown in Fig.~\ref{fig:color-aper}. Linear regression on the $\mathrm{B-R}$-aperture region is performed around \qty{40000}{\km}, and the slope of the fitting line (blue dashed line in the figure) is used to quantify the $\mathrm{B-R}$ color variation. The fitting errors are all omitted since they are negligible. Table~\ref{tab:color-variation} lists the $\mathrm{B-R}$ color variation in units of [\unit{mag/\qty{e4}{\km}}] for comets C/2019 L3 and C/2020 P3. The $\mathrm{B-R}$ color variations for comet C/2019 L3 are very small, with an average value of \qty{-8.93e-3}{mag/\qty{e4}{\km}}.  
+\added{Cometary colors may vary with photometric aperture, and numerous studies have explored this dependence (e.g., \mbox{\citealt{betzler_analysis_2017}}; \mbox{\citealt{kolokolova_color_2003}}). In order to maximize the color differences with apertures, the $\mathrm{B-R}$ color is well-suited for analysis \mbox{\citep{jewittCOLORSYSTEMATICSCOMETS2015}}. For this purpose, the $\mathrm{B-R}$ color of the two comets is additionally measured with variable apertures, and some of the results are shown in Fig.~\ref{fig:color-aper}, where linear regression on the $\mathrm{B-R}$-aperture region is performed around \mbox{\qty{40000}{\km}}, and the slope of the fitting line (blue dashed line) is used to quantify the $\mathrm{B-R}$ color variation. The fitting errors are all omitted since they are negligible. Table~\ref{tab:color-variation} lists the $\mathrm{B-R}$ color variations in units of [\mbox{\unit{mag/\qty{e4}{\km}}}] for comets C/2019 L3 and C/2020 P3. For comet C/2019 L3, the $\mathrm{B-R}$ color variations are very small, with an average value of \mbox{\qty{-8.93e-3}{mag/\qty{e4}{\km}}}, and in most cases, its $\mathrm{B-R}$ color becomes bluer as the aperture size increases. For comet C/2020 P3, the only one $\mathrm{B-R}$ color on \DTMdate{2021-5-12} variates relatively greater with aperture size as the fitting slope reaches \mbox{\qty{0.38}{mag/\qty{e4}{\km}}}. The shift towards a bluer coma color with increasing aperture size is attributed to variations in the size sorting of dust particles or changes in composition relative to cometocentric distance \mbox{\citep{kolokolova_physical_2004}}. Conversely, the sublimation of water ice can contribute to a redder coma color with larger apertures \mbox{\citep{kolokolova_color_2003}}. }
 
-
-
-In most cases, the $\mathrm{B-R}$ color becomes bluer as the aperture size increases for comet C/2019 L3. While on \DTMdate{2021-4-4}, \DTMdate{2021-5-4} and \DTMdate{2021-5-14}, 
 
 \begin{figure}
     \centering
@@ -76,13 +70,13 @@ In most cases, the $\mathrm{B-R}$ color becomes bluer as the aperture size incre
     \subcaptionbox{\DTMdate{2021-5-14}}[.48\linewidth]{
         \includegraphics[width=\linewidth]{BminusR-rho-C2019L3-210514-095.pdf}
     }
-    \caption{$\mathrm{B-V}$ color as a function of aperture for comet C/2019 L3. The green dashed line at \qty{40000}{\km} represents photometric aperture used in Section~\ref{sec:data-reduction}. Least squares fittig is performed on the cyan region around \qty{40000}{\km}, and the slope of fit is used to quantify color variation. }
+    \caption{\added{$\mathrm{B-V}$ color as a function of aperture for comet C/2019 L3. The green dashed line at \mbox{\qty{40000}{\km}} represents photometric aperture used in Section~\ref{sec:data-reduction}. Least squares fittig is performed on the cyan region around \mbox{\qty{40000}{\km}}, and the slope of fit is used to quantify color variation. }}
     \label{fig:color-aper}
 \end{figure}
 
 \begin{table}
     \centering
-    \caption{Average $\mathrm{B-R}$ color variations around photometric aperture for comets C/2019 L3 (ATLAS) and C/2020 P3 (ATLAS).}\label{tab:color-variation}
+    \caption{\added{$\mathrm{B-R}$ color variations around photometric aperture for comets C/2019 L3 (ATLAS) and C/2020 P3 (ATLAS).}}\label{tab:color-variation}
     \begin{threeparttable}
         % \resizebox{\linewidth}{!}{
         \begin{tabular}{cc}
@@ -109,7 +103,7 @@ In most cases, the $\mathrm{B-R}$ color becomes bluer as the aperture size incre
         % }
     \end{threeparttable}
 \end{table}
-\subsection{\added{Summary}}
+
 In summary, we present the observational results of comets C/2019 L3 and C/2020 P3. The conclusions are as follows: 
 \begin{enumerate}
     \item For comet C/2019 L3, A fan-shape structure can be observed in the northeast direction. This feature is visible in both V and R filters. 
