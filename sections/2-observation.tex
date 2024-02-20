@@ -5,7 +5,7 @@
 The observations on two comets metioned above were conducted using three different telescopes belonging to the International Scientific Optical Network (ISON) between 2021 March and 2021 May, namely the {\qty{1.0}{\m}} ZEISS-1000\footnote{\url{https://link.springer.com/content/pdf/10.1134/S1990341320040112.pdf}} 
 telescope at Simeiz Observatory (Simeiz), the {\qty{2.6}{\m}} Shajn Telescope (ZTSh\footnote{\url{https://crao.ru/index.php/en/telescopes-en/ztsh-en}}) 
 at Crimean Astrophysical Observatory (CrAO), and the {\qty{0.7}{\m}} Maksutov meniscus telescope at Abastumani Astrophysical Observatory (AbAO\footnote{\url{https://www.oato.inaf.it/blazars/webt/abastumani-astrophysical-observatory-georgia-fsu/}}). 
-The detailed infomation of these telescopes are listed in Table~\ref{tab:telescope}. Broadband B, V, R and I filters in the Johnson-Cousins system were used to obtain the observational data. The log of all observations is presented in Table~\ref{tab:c2019andc2020}. Most of the data were obtained from telescope Maksutov. For comet C/2019 L3, the observations were carried out before the time of perihelion, while for comet C/2020 P3, it was \replaced{observed before and after its perihelion }{near its perihelion during the observation period}. 
+The detailed infomation of these telescopes are listed in Table~\ref{tab:telescope}. Broadband B, V, R and I filters in the Johnson-Cousins system were used to obtain the observational data. The log of all observations is presented in Table~\ref{tab:c2019andc2020}. Most of the data were obtained from telescope Maksutov. For comet C/2019 L3, the observations were carried out before the time of perihelion, while for comet C/2020 P3, it was observed before and after its perihelion. 
 
 % 使用的望远镜信息
 \begin{table}
@@ -34,12 +34,12 @@ The detailed infomation of these telescopes are listed in Table~\ref{tab:telesco
 \begin{table}
     \sisetup{range-phrase=\text{--}}
     \centering
-    \caption{Log of observations on C/2019 L3 \added{(ATLAS)} and C/2020 P3 \added{(ATLAS)}.}\label{tab:c2019andc2020}
+    \caption{Log of observations on C/2019 L3 (ATLAS) and C/2020 P3 (ATLAS).}\label{tab:c2019andc2020}
     \begin{threeparttable}
         \resizebox{\linewidth}{!}{
         \begin{tabular}{ccccccccccc}
             \toprule
-            Observation Date & r~[\si{\astronomicalunit}]\tnote{1} & $\Delta$~[\si{\astronomicalunit}]\tnote{2} & Ph.A\tnote{3} & Filters\tnote{4} & Size\tnote{5} & \added{Bin} & \added{Seeing [\unit{\arcsecond}]} & \added{SNR}\tnote{6} & Scale~[\si{\km/px}]\tnote{7} & Telescope \\
+            Observation Date & r~[\si{\astronomicalunit}]\tnote{1} & $\Delta$~[\si{\astronomicalunit}]\tnote{2} & Ph.A\tnote{3} & Filters\tnote{4} & Size\tnote{5} & Bin & Seeing [\unit{\arcsecond}] & SNR\tnote{6} & Scale~[\si{\km/px}]\tnote{7} & Telescope \\
             \midrule
             \multicolumn{8}{l}{\textbf{C/2019 L3 (ATLAS)}} \\
             2021-03-28 & \num{4.385} & \num{4.916} & \num{10.4} & B$\times$10, V$\times$10, R$\times$10 & \qtyproduct{1018x1018}{px}, \qtyproduct{9.8x9.8}{\arcminute}   & \numproduct{3x3} & 1.7 & \numrange{1.5}{4.3} & 2075 & ZEISS-1000 \\
@@ -70,20 +70,20 @@ The detailed infomation of these telescopes are listed in Table~\ref{tab:telesco
             \item[4] numbers after `$\times$' indicate amounts of images under corresponding filters, \\
             `C' means `clear glass'
             \item[5] size of original image in units of [px] and arcminute
-            \item[6] \added{the range for signal-to-noise ratios of images in all filters}
+            \item[6] the range for signal-to-noise ratios of images in all filters
             \item[7] the calculated image scale in \unit{\km} per pixel
-            \item[8] images \added{captured} on this date are too \replaced{dim for practical use}{faint to use} 
+            \item[8] images captured on this date are too dim for practical use
         \end{tablenotes}
     \end{threeparttable}
 \end{table}
 
 \subsection{Data reduction}\label{sec:data-reduction}
 
-All of the images had been corrected with common methods for dark subtraction, bias subtraction and flat-field normalization when ISON provided the observational data for this research. In order to improve the signal-to-noise ratio, images on different observational dates were aligned and sum-combined for different filters according to the photocenter of comet. The same thing was also done on the basis of photocenter of background star as the motion of comet in each frame is obvious. Several tasks such as \texttt{center}, \texttt{imshift} and \texttt{combine} in IRAF (the \textbf{I}mage \textbf{R}eduction and \textbf{A}nalysis \textbf{F}acility)\footnote{\url{https://github.com/iraf-community/iraf}}, were applied for this procedure. Since the comet and reference stars for photometry are in the same frame, the airmass correction can be neglected. Given that some images are in the case where comet gets too close to the background stars around, psf subtraction was conducted to cover up these stars with tasks such as \verb|substar|. 
+All of the images had been corrected with common methods for dark subtraction, bias subtraction and flat-field normalization when ISON provided the observational data for this research. In order to improve the signal-to-noise ratio, images on different observational dates were aligned and sum-combined for different filters according to the photocenter of comet. The same thing was also done on the basis of photocenter of background star as the motion of comet in each frame is obvious. Several tasks such as \texttt{center}, \texttt{imshift} and \texttt{combine} in IRAF (the \textbf{I}mage \textbf{R}eduction and \textbf{A}nalysis \textbf{F}acility)\footnote{\url{https://github.com/iraf-community/iraf}}, were applied for this procedure. Since the comet and reference stars for photometry are in the same frame, the airmass correction can be neglected. Given that some images contain instances where the comet appears to be in close proximity to background stars, psf subtraction was conducted to cover up these stars with tasks such as \verb|substar|. 
 
 The photometric calibration of these two comets' data was performed with the UCAC4 \citep{zacharias_fourth_2013} and UCAC5 \citep{zacharias_ucac5_2017}. Additionally, the GCVS 5.1 \citep{samus_general_2017} was applied to inspect the variability of all the comparison stars. 
 
-In order to measure the  instrunment magnitudes of comets and comparison stars, circular aperture photometry was applied. When conducting aperture photometry on stars, the sky background value is determined by the annular region around the star. In contrast, when conducting aperture photometry on comets, the sky background value is determined by several clean background areas far away from the comet. The photometric aperture of comparison stars was determined by nearly \num{2} times the full-wide at half-maximum (FWHM). \replaced{The photometry of comets was uniformly conducted using an aperture of \mbox{\qty{40000}{\km}}, ensuring that this aperture is up to \num{1.5} times the full-wide at half-maximum. Moreover, the neighbour stars are situated outside the photometric regions of comets, rendering them inconsequential to the photometry of comets, despite the imperfect PSF subtraction. }{Since three different telescopes were involved during the observation, the photometry of comets was performed on different apertures centered on the comet photocenter, with all of them ensured to be up to \num{1.5} times the full-wide at half-maximum and close to each other in units of arcsecond as much as possible. }
+In order to measure the  instrunment magnitudes of comets and comparison stars, circular aperture photometry was applied. When conducting aperture photometry on stars, the sky background value is determined by the annular region around the star. In contrast, when conducting aperture photometry on comets, the sky background value is determined by several clean background areas far away from the comet. The photometric aperture of comparison stars was determined by nearly \num{2} times the full-wide at half-maximum (FWHM). The photometry of comets was uniformly conducted using an aperture \added{with a radius} of {\qty{40000}{\km}} , ensuring that this aperture is up to \num{1.5} times the full-wide at half-maximum. Moreover, the neighbour stars are situated outside the photometric regions of comets, rendering them inconsequential to the photometry of comets, despite the imperfect PSF subtraction. 
 The ranges of seeings for the three telescopes are as follows: \ang{;;1.2} to \ang{;;7.5} for ZEISS-1000, \ang{;;3.9} to \ang{;;7.8} for Maksutov, and \ang{;;2.4} to \ang{;;3.9} for ZTSh. The photometric results are listed as Table~\ref{tab:bvr}, and the error of photometry $e_{\mathrm{phot}}$ is derived from equation (\ref{eq:err}) as follows: 
 \begin{equation}
     e_{\mathrm{phot}} = \sqrt{e_{\mathrm{c}}^{2} + \sigma_\mathrm{s}^2}, 

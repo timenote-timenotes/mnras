@@ -1,60 +1,6 @@
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(e.g., \mbox {\citealt {mazzotta_epifani_distant_2009, mazzotta_epifani_activity_2010}}; \mbox {\citealt {meech_activity_2009}}; \mbox {\citealt {ivanova_quasi-simultaneous_2023}})}}{1}{section*.1}%
-\contentsline {replaced}{Replaced: \truncate {\Changestruncatewidth }{in which case }}{1}{section*.2}%
-\contentsline {replaced}{Replaced: \truncate {\Changestruncatewidth }{namely C/2019 L3 (ATLAS) (hereafter C/2019 L3) and C/2020 P3 (ATLAS) (hereafter C/2020 P3)}}{1}{section*.3}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{2}{section*.9}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{2}{section*.10}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{2}{section*.11}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{2}{section*.12}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{2}{section*.16}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{2}{section*.17}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{2}{section*.25}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{2}{section*.26}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{Bin}}{2}{section*.28}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{Seeing [\unit {\arcsecond }]}}{2}{section*.29}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{SNR}}{2}{section*.30}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{the range for signal-to-noise ratios of images in all filters}}{2}{section*.31}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{captured}}{2}{section*.32}%
-\contentsline {replaced}{Replaced: \truncate {\Changestruncatewidth }{dim for practical use}}{2}{section*.33}%
-\contentsline {replaced}{Replaced: \truncate {\Changestruncatewidth }{observed before and after its perihelion }}{2}{section*.19}%
-\contentsline {replaced}{Replaced: \truncate {\Changestruncatewidth }{The photometry of comets was uniformly conducted using an aperture of \mbox {\qty {40000}{\km }}, ensuring that this aperture is up to \num {1.5} times the full-wide at half-maximum. Moreover, the neighbour stars are situated outside the photometric regions of comets, rendering them inconsequential to the photometry of comets, despite the imperfect PSF subtraction. }}{3}{section*.34}%
-\contentsline {deleted}{Deleted: \truncate {\Changestruncatewidth }{whose field of view are all $\ang {;2;} \times \ang {;2;}$}}{3}{section*.35}%
-\contentsline {comment}{Commented: \truncate {\Changestruncatewidth }{the FOV of C/2020 P3 has been reduced}}{3}{section*.36}%
-\contentsline {replaced}{Replaced: \truncate {\Changestruncatewidth }{Its extended coma resembling a tail is faintly visible, as seen in the images captured on \DTMdate {2021-5-12}. }}{3}{section*.37}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS), field of view: \mbox {\qtyproduct {2x2}{\arcminute }}}}{3}{section*.43}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS), field of view: \mbox {\qtyproduct {0.8x0.8}{\arcminute }}}}{3}{section*.45}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{3}{section*.49}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{3}{section*.50}%
-\contentsline {deleted}{Deleted: \truncate {\Changestruncatewidth }{The field of view is $ 2^{\prime } \times 2^{\prime } $ for each thumbnail.}}{3}{section*.51}%
-\contentsline {deleted}{Deleted: \truncate {\Changestruncatewidth }{For morphology analysis, it is necessasy to apply some image enhancement techniques with which we can recognize some features and structures hidden in coma \mbox {\citep {samarasinha_image_2014}}. Many pieces of software have been developed for comet image enhancement, such as Astroart 8}}{3}{section*.38}%
-\contentsline {deleted}{Deleted: \truncate {\Changestruncatewidth }{and online tool Cometary Coma Image Enhancement Facility}}{3}{section*.39}%
-\contentsline {deleted}{Deleted: \truncate {\Changestruncatewidth }{In this work, we applied azimuthal renormalization method on images of C/2019 L3 on \DTMdate {2021-5-14} by telescope Maksutov since other images are too faint and show no evident features after enhanced. The result is shown in Fig.\nobreakspace {}\ref {fig:aziren}, where the enhanced images under V and R filters show a small northeastward fan-shape structure, while the enhanced images under B and I filters give no obvious feature. }}{3}{section*.40}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{4}{section*.56}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{4}{section*.57}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{with apertures consistently set to \mbox {\qty {40000}{\km }}}}{4}{section*.58}%
-\contentsline {replaced}{Replaced: \truncate {\Changestruncatewidth }{The measurement of surface brightness is largely affected by the accuracy of bakground substraction. In order to obtain an accurate estimate of the background, we use the \texttt {photutils} package in Python and generate a 2D image of the background. }}{4}{section*.60}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{Moreover, the PSF artifacts resulting from imperfect PSF substraction play a minor role on the SBP calculation. This is because the PSF stars are outside the SBP apertures, and the background is calculated in a more accurate manner.}}{4}{section*.61}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{4}{section*.64}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{4}{section*.67}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{5}{section*.71}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{5}{section*.73}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{5}{section*.76}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{5}{section*.77}%
-\contentsline {replaced}{Replaced: \truncate {\Changestruncatewidth }{and the $A(0)f\rho $ values calculated in the reference aperture of \mbox {\qty {10000}{\km }} are summarised in Table\nobreakspace {}\ref {tab:afrho} }}{5}{section*.68}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{5}{section*.81}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{5}{section*.82}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{5}{section*.92}%
-\contentsline {comment}{Commented: \truncate {\Changestruncatewidth }{updated with aperture of {\qty {40000}{\km }}}}{5}{section*.84}%
-\contentsline {replaced}{Replaced: \truncate {\Changestruncatewidth }{\num {0.28 +- 0.05}}}{5}{section*.85}%
-\contentsline {replaced}{Replaced: \truncate {\Changestruncatewidth }{\num {0.21 +- 0.05}}}{5}{section*.86}%
-\contentsline {replaced}{Replaced: \truncate {\Changestruncatewidth }{\num {1.04 +- 0.09}}}{5}{section*.87}%
-\contentsline {replaced}{Replaced: \truncate {\Changestruncatewidth }{\num {0.26 +- 0.05}}}{5}{section*.88}%
-\contentsline {replaced}{Replaced: \truncate {\Changestruncatewidth }{\num {0.76 +- 0.04}}}{5}{section*.89}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{6}{section*.96}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{6}{section*.97}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{6}{section*.101}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{(ATLAS)}}{7}{section*.105}%
-\contentsline {comment}{Commented: \truncate {\Changestruncatewidth }{color-aperture denpendency}}{7}{section*.107}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{$\mathrm {B-V}$ color as a function of aperture for comet C/2019 L3. The green dashed line at \mbox {\qty {40000}{\km }} represents photometric aperture used in Section\nobreakspace {}\ref {sec:data-reduction}. Least squares fittig is performed on the cyan region around \mbox {\qty {40000}{\km }}, and the slope of fit is used to quantify color variation. }}{7}{section*.111}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{$\mathrm {B-R}$ color variations around photometric aperture for comets C/2019 L3 (ATLAS) and C/2020 P3 (ATLAS).}}{7}{section*.114}%
-\contentsline {added}{Added: \truncate {\Changestruncatewidth }{Cometary colors may vary with photometric aperture, and numerous studies have explored this dependence (e.g., \mbox {\citealt {betzler_analysis_2017}}; \mbox {\citealt {kolokolova_color_2003}}). In order to maximize the color differences with apertures, the $\mathrm {B-R}$ color is well-suited for analysis \mbox {\citep {jewittCOLORSYSTEMATICSCOMETS2015}}. For this purpose, the $\mathrm {B-R}$ color of the two comets is additionally measured with variable apertures, and some of the results are shown in Fig.\nobreakspace {}\ref {fig:color-aper}, where linear regression on the $\mathrm {B-R}$-aperture region is performed around \mbox {\qty {40000}{\km }}, and the slope of the fitting line (blue dashed line) is used to quantify the $\mathrm {B-R}$ color variation. The fitting errors are all omitted since they are negligible. Table\nobreakspace {}\ref {tab:color-variation} lists the $\mathrm {B-R}$ color variations in units of [\mbox {\unit {mag/\qty {e4}{\km }}}] for comets C/2019 L3 and C/2020 P3. For comet C/2019 L3, the $\mathrm {B-R}$ color variations are very small, with an average value of \mbox {\qty {-8.93e-3}{mag/\qty {e4}{\km }}}, and in most cases, its $\mathrm {B-R}$ color becomes bluer as the aperture size increases. For comet C/2020 P3, the $\mathrm {B-R}$ color observed on \DTMdate {2021-5-12}, displays a relatively larger variation with aperture size, with a fitting slope reaching \mbox {\qty {0.38}{mag/\qty {e4}{\km }}}. The shift towards a bluer coma color with increasing aperture size is attributed to variations in the size sorting of dust particles or changes in composition relative to cometocentric distance \mbox {\citep {kolokolova_physical_2004}}. Conversely, the sublimation of water ice can contribute to a redder coma color with larger apertures \mbox {\citep {kolokolova_color_2003}}. }}{7}{section*.108}%
-\contentsline {deleted}{Deleted: \truncate {\Changestruncatewidth }{For comet C/2019 L3, A fan-shape structure can be observed in the northeast direction. This feature is visible in both V and R filters.}}{8}{section*.116}%
+\contentsline {added}{Added: \truncate {\Changestruncatewidth }{with a radius}}{3}{section*.8}%
+\contentsline {added}{Added: \truncate {\Changestruncatewidth }{a radius of}}{4}{section*.12}%
+\contentsline {added}{Added: \truncate {\Changestruncatewidth }{with a radius}}{4}{section*.16}%
+\contentsline {added}{Added: \truncate {\Changestruncatewidth }{within the aperture radius}}{5}{section*.20}%
+\contentsline {added}{Added: \truncate {\Changestruncatewidth }{within the aperture radius of}}{5}{section*.23}%
+\contentsline {added}{Added: \truncate {\Changestruncatewidth }{within the aperture radius}}{6}{section*.26}%
