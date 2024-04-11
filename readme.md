@@ -1,3 +1,19 @@
+# Description
+
+This is my preprint of paper for MNRAS. 
+
+
+
+
+
+
+
+
+
+
+
+# Original readme file
+
 % readme.txt
 %
 % MNRAS journal LaTeX package
