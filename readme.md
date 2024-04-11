@@ -2,7 +2,7 @@
 
 This is my preprint of paper for MNRAS. 
 
-
+This branch serves as the edition revised by the editor.
 
 
 
